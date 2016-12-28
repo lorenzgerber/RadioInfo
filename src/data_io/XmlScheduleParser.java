@@ -8,20 +8,23 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 /**
  * Created by loge on 2016-12-23.
  */
-public class XmlScheduleGetter {
+public class XmlScheduleParser {
 
     NodeList nodeList;
     ProgramListModel programs = new ProgramListModel();
 
 
-    public XmlScheduleGetter(XmlReader reader){
+    public XmlScheduleParser(String stringUrl, LocalDate date ){
 
-        nodeList = reader.doc.getElementsByTagName("scheduledprogram");
+        XmlReader reader = new XmlReader(stringUrl);
+
+        nodeList = reader.doc.getElementsByTagName("scheduledepisode");
 
 
         for (int temp = 0; temp < nodeList.getLength(); temp++) {
@@ -41,11 +44,14 @@ public class XmlScheduleGetter {
                 String name = eElementProgram.getAttribute("name");
                 tempProgram = new ProgramModel(programid, name);
 
-                String description = eElementEpisode.getElementsByTagName("description").item(0).getTextContent();
+                String description = eElementEpisode
+                        .getElementsByTagName("description")
+                        .item(0).getTextContent();
                 if (description.length()>0){
                     tempProgram.setDescription(description);
                 }
 
+                // parse start time
                 LocalDateTime start = new UtcToLocalConverter(
                         eElementEpisode
                                 .getElementsByTagName("starttimeutc")
@@ -53,6 +59,7 @@ public class XmlScheduleGetter {
                                 .getTextContent())
                         .getDate();
 
+                // parse end time
                 LocalDateTime end = new UtcToLocalConverter(
                         eElementEpisode
                                 .getElementsByTagName("endtimeutc")

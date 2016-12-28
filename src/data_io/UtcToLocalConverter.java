@@ -17,7 +17,6 @@ public class UtcToLocalConverter {
 
     public UtcToLocalConverter(String dateTime){
 
-        //DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss'Z'");
         DateTimeFormatter formatter = DateTimeFormatter.ISO_INSTANT.withZone(ZoneId.of("GMT"));
         ZonedDateTime test = ZonedDateTime.parse(dateTime, formatter).withZoneSameInstant(ZoneId.systemDefault());
         outDateTime = test.toLocalDateTime();

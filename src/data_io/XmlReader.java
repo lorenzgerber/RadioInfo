@@ -17,8 +17,6 @@ public class XmlReader {
 
     public XmlReader(String stringUrl){
 
-
-
         try {
 
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();

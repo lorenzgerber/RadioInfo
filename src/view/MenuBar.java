@@ -1,11 +1,8 @@
 package view;
 
-import data_io.XmlChannelGetter;
-import data_io.XmlReader;
 import model.ChannelListModel;
 
 import javax.swing.JMenuBar;
-import javax.swing.JMenu;
 
 /**
  * Created by loge on 2016-12-21.

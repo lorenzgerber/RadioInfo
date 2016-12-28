@@ -1,7 +1,8 @@
 import controller.MainController;
-import data_io.XmlChannelGetter;
+import data_io.XmlChannelParser;
 import data_io.XmlReader;
 import model.ChannelListModel;
+import model.ChannelModel;
 import view.Gui;
 
 import javax.swing.*;
@@ -19,11 +20,12 @@ public class RadioInfoMain {
 
             @Override
             public void run() {
-                XmlReader xmlReader;
-                xmlReader = new XmlReader("http://api.sr.se/api/v2/channels/");
-                XmlChannelGetter channelGetter = new XmlChannelGetter(xmlReader);
+
                 ChannelListModel channels = new ChannelListModel();
-                channels = channelGetter.getChannelList();
+                XmlChannelParser channelGetter = new XmlChannelParser();
+                for(ChannelModel channel : channelGetter){
+                    channels.add(channel);
+                }
 
                 Gui gui = new Gui("Radio Info", channels);
                 MainController main = new MainController(gui, channels);

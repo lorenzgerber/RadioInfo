@@ -1,7 +1,10 @@
 package controller;
 
+import data_io.XmlReader;
+import data_io.XmlScheduleParser;
 import model.ChannelListModel;
 import model.ChannelModel;
+import model.ProgramListModel;
 import view.*;
 import javax.swing.JMenuItem;
 
@@ -17,6 +20,7 @@ public class MainController {
     // current Channel
     ChannelModel currentChannel;
 
+
     // Gui
     Gui gui;
 
@@ -28,6 +32,7 @@ public class MainController {
         this.gui = gui;
         this.channels = channels;
         this.currentChannel = channels.get(0);
+        //ProgramListModel currentSchedule = new XmlScheduleParser();
 
         // add listeners in file menu
         for(JMenuItem item : gui.menuBar.fileMenu.menuItems){
