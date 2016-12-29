@@ -1,0 +1,961 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sr>
+  <copyright>Copyright Sveriges Radio 2016. All rights reserved.</copyright>
+  <pagination>
+    <page>1</page>
+    <size>1000</size>
+    <totalhits>91</totalhits>
+    <totalpages>1</totalpages>
+  </pagination>
+  <schedule>
+    <scheduledepisode>
+      <episodeid>830018</episodeid>
+      <title>Ekonyheter</title>
+      <description>Här hör du Ekots nyhetssändningar. Senaste nytt - dygnet runt, året om.</description>
+      <starttimeutc>2016-12-28T23:00:00Z</starttimeutc>
+      <endtimeutc>2016-12-28T23:02:05Z</endtimeutc>
+      <program id="4540" name="Ekot" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826118</episodeid>
+      <title>Dagens dikt</title>
+      <description>Författare och skådespelare läser poesi från nu och då, när och fjärran. </description>
+      <starttimeutc>2016-12-28T23:02:05Z</starttimeutc>
+      <endtimeutc>2016-12-28T23:10:00Z</endtimeutc>
+      <program id="2031" name="Dagens dikt" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/478/3572891_2048_1152.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/478/3572891_2048_1152.jpg?preset=original</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826124</episodeid>
+      <title>Nordegren och Epstein i P1</title>
+      <description>En personlig talkshow om aktualiteter och nyheter, i P1 Sveriges Radio. Med Thomas Nordegren och Louise Epstein.</description>
+      <starttimeutc>2016-12-28T23:10:00Z</starttimeutc>
+      <endtimeutc>2016-12-28T23:55:00Z</endtimeutc>
+      <program id="4058" name="Nordegren &amp; Epstein i P1" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/478/3510983_2048_1152.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/478/3510983_2048_1152.jpg?preset=original</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <title>Ur arkivet</title>
+      <subtitle>: Om systrarna Listervik som fotvandrade jorden runt i åtta år</subtitle>
+      <description />
+      <starttimeutc>2016-12-28T23:55:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T00:00:00Z</endtimeutc>
+      <program id="0" />
+      <channel id="132" name="P1" />
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>830019</episodeid>
+      <title>Ekonyheter</title>
+      <description>Här hör du Ekots nyhetssändningar. Senaste nytt - dygnet runt, året om.</description>
+      <starttimeutc>2016-12-29T00:00:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T00:02:05Z</endtimeutc>
+      <program id="4540" name="Ekot" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826075</episodeid>
+      <title>Tendens</title>
+      <subtitle>: Jag lämnar dig aldrig</subtitle>
+      <description>Kortdokumentärer som ger sig tid att lyssna, ta del och låta folk prata färdigt. I Tendens får du som lyssnare höra om människors liv och idéer. Här hör  mening och mönster i det som sker eller håller på att hända.</description>
+      <starttimeutc>2016-12-29T00:02:05Z</starttimeutc>
+      <endtimeutc>2016-12-29T00:35:00Z</endtimeutc>
+      <program id="3381" name="Tendens – kortdokumentärer" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/3381/b94b51eb-a4bc-4c75-8953-e356966f50a7.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/3381/b94b51eb-a4bc-4c75-8953-e356966f50a7.jpg?preset=original</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <title>Vetenskapsradion Språket</title>
+      <description />
+      <starttimeutc>2016-12-29T00:35:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T01:00:00Z</endtimeutc>
+      <program id="411" name="Språket" />
+      <channel id="132" name="P1" />
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>830020</episodeid>
+      <title>Ekonyheter</title>
+      <description>Här hör du Ekots nyhetssändningar. Senaste nytt - dygnet runt, året om.</description>
+      <starttimeutc>2016-12-29T01:00:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T01:02:05Z</endtimeutc>
+      <program id="4540" name="Ekot" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826074</episodeid>
+      <title>Kropp &amp; Själ</title>
+      <description>P1:s hälsojournalistiska program. Allt från träning till medicin och sömnproblem tas upp med ett kritiskt öga på de rådande hälsotrenderna. Personliga livsöden varvas med de senaste forskningsrönen.</description>
+      <starttimeutc>2016-12-29T01:02:05Z</starttimeutc>
+      <endtimeutc>2016-12-29T02:00:00Z</endtimeutc>
+      <program id="1272" name="Kropp &amp; Själ" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/1272/3ac14a87-16b2-498c-b3ab-a6bb8c62427b.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/1272/3ac14a87-16b2-498c-b3ab-a6bb8c62427b.jpg?preset=original</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>830021</episodeid>
+      <title>Ekonyheter</title>
+      <description>Här hör du Ekots nyhetssändningar. Senaste nytt - dygnet runt, året om.</description>
+      <starttimeutc>2016-12-29T02:00:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T02:02:05Z</endtimeutc>
+      <program id="4540" name="Ekot" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <title>P3 Dokumentär</title>
+      <subtitle>: Ericsson och mutskandalen</subtitle>
+      <description />
+      <starttimeutc>2016-12-29T02:02:05Z</starttimeutc>
+      <endtimeutc>2016-12-29T04:00:00Z</endtimeutc>
+      <program id="2519" name="P3 Dokumentär" />
+      <channel id="132" name="P1" />
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>830023</episodeid>
+      <title>Ekonyheter</title>
+      <description>Här hör du Ekots nyhetssändningar. Senaste nytt - dygnet runt, året om.</description>
+      <starttimeutc>2016-12-29T04:00:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T04:02:05Z</endtimeutc>
+      <program id="4540" name="Ekot" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826119</episodeid>
+      <title>Vetandets värld</title>
+      <subtitle>: Rosettas överraskningar från kometen</subtitle>
+      <description>Om vetenskap, forskningsrön och ny teknik som förändrar vår värld. Varje vardag ger programmet fördjupning om vetenskap. Det kan handla om allt från skalbaggar till det senaste inom hiv-forskningen.</description>
+      <starttimeutc>2016-12-29T04:02:05Z</starttimeutc>
+      <endtimeutc>2016-12-29T04:29:00Z</endtimeutc>
+      <program id="412" name="Vetandets värld" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/406/8e9f8562-3092-42ce-87b5-8a0090e9aedc.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/406/8e9f8562-3092-42ce-87b5-8a0090e9aedc.jpg?preset=original</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <title>P1-morgon</title>
+      <description />
+      <starttimeutc>2016-12-29T04:29:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T04:30:00Z</endtimeutc>
+      <program id="1650" name="P1-morgon" />
+      <channel id="132" name="P1" />
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>830024</episodeid>
+      <title>Ekonyheter</title>
+      <description>Här hör du Ekots nyhetssändningar. Senaste nytt - dygnet runt, året om.</description>
+      <starttimeutc>2016-12-29T04:30:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T04:35:05Z</endtimeutc>
+      <program id="4540" name="Ekot" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <title>Ring P1!</title>
+      <subtitle>med Tomas Tengby</subtitle>
+      <description />
+      <starttimeutc>2016-12-29T04:35:05Z</starttimeutc>
+      <endtimeutc>2016-12-29T04:45:00Z</endtimeutc>
+      <program id="1120" name="Ring P1 - 099-510 10" />
+      <channel id="132" name="P1" />
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826134</episodeid>
+      <title>Morgonandakt</title>
+      <description>Du får styrka åt din start på dagen. Tankar och reflektioner delas.</description>
+      <starttimeutc>2016-12-29T04:45:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T04:55:00Z</endtimeutc>
+      <program id="1320" name="Morgonandakten" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/1320/dea9b396-6140-4e9e-831e-75cf1c4613d3.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/1320/dea9b396-6140-4e9e-831e-75cf1c4613d3.jpg?preset=original</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826135</episodeid>
+      <title>Sjöväder</title>
+      <description>I landväder och sjöväder får du en översikt, varningar och regionala väderprognoser från SMHI för ett dygn framåt.</description>
+      <starttimeutc>2016-12-29T04:55:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T04:59:15Z</endtimeutc>
+      <program id="2000" name="Väder från hela landet" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/2000/601ada6b-aea9-4d9a-ab61-15d388461b3a.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/2000/601ada6b-aea9-4d9a-ab61-15d388461b3a.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826136</episodeid>
+      <title>P1-morgon</title>
+      <description>P1-morgon bjuder på de senaste nyheterna, men vi nöjer oss inte där. Vi tar nyheterna djupare.</description>
+      <starttimeutc>2016-12-29T04:59:15Z</starttimeutc>
+      <endtimeutc>2016-12-29T05:00:00Z</endtimeutc>
+      <program id="1650" name="P1-morgon" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/1650/0b677a76-518a-4c84-a15b-bdd4b0e8343b.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/1650/0b677a76-518a-4c84-a15b-bdd4b0e8343b.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826136</episodeid>
+      <title>Morgoneko</title>
+      <description>Här hör du Ekots nyhetssändningar. Senaste nytt - dygnet runt, året om.</description>
+      <starttimeutc>2016-12-29T05:00:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T05:15:00Z</endtimeutc>
+      <program id="4540" name="Ekot" />
+      <channel id="132" name="P1" />
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826136</episodeid>
+      <title>P1-morgon</title>
+      <description>P1-morgon bjuder på de senaste nyheterna, men vi nöjer oss inte där. Vi tar nyheterna djupare.</description>
+      <starttimeutc>2016-12-29T05:15:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T05:30:00Z</endtimeutc>
+      <program id="1650" name="P1-morgon" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/1650/0b677a76-518a-4c84-a15b-bdd4b0e8343b.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/1650/0b677a76-518a-4c84-a15b-bdd4b0e8343b.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826136</episodeid>
+      <title>Ekonyheter</title>
+      <description>Här hör du Ekots nyhetssändningar. Senaste nytt - dygnet runt, året om.</description>
+      <starttimeutc>2016-12-29T05:30:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T05:32:00Z</endtimeutc>
+      <program id="4540" name="Ekot" />
+      <channel id="132" name="P1" />
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826136</episodeid>
+      <title>Ekonomieko</title>
+      <description>Ekonomiekot är Ekots nyhetsprogram om senaste nytt i ekonomins värld.</description>
+      <starttimeutc>2016-12-29T05:32:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T05:34:00Z</endtimeutc>
+      <program id="178" name="Ekonomiekot" />
+      <channel id="132" name="P1" />
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826136</episodeid>
+      <title>Nyheter från Vetenskapsradion</title>
+      <description>Vetenskapsnyheter från alla tänkbara forskningsområden. Här får du som lyssnare ofta höra nyheten innan den blir uppmärksammad av övriga media. Sänds i P1.</description>
+      <starttimeutc>2016-12-29T05:34:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T05:39:00Z</endtimeutc>
+      <program id="406" name="Vetenskapsradion" />
+      <channel id="132" name="P1" />
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826136</episodeid>
+      <title>P1-morgon</title>
+      <description>P1-morgon bjuder på de senaste nyheterna, men vi nöjer oss inte där. Vi tar nyheterna djupare.</description>
+      <starttimeutc>2016-12-29T05:39:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T05:50:00Z</endtimeutc>
+      <program id="1650" name="P1-morgon" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/1650/0b677a76-518a-4c84-a15b-bdd4b0e8343b.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/1650/0b677a76-518a-4c84-a15b-bdd4b0e8343b.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826136</episodeid>
+      <title>Tankar för dagen</title>
+      <subtitle>med Per J Andersson, journalist och världsresenär</subtitle>
+      <description>Det tar bara några minuter - stanna upp ett tag och lyssna! Tankar för dagen ger en stunds eftertanke mitt i morgonens nyhetsflöde. Det kan vara en betraktelse över någonting som just skett i världen eller tankar kring händelser i det mindre, privata.</description>
+      <starttimeutc>2016-12-29T05:50:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T05:55:00Z</endtimeutc>
+      <program id="1165" name="Tankar för dagen" />
+      <channel id="132" name="P1" />
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826136</episodeid>
+      <title>Landväder</title>
+      <description>I landväder och sjöväder får du en översikt, varningar och regionala väderprognoser från SMHI för ett dygn framåt.</description>
+      <starttimeutc>2016-12-29T05:55:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T05:59:15Z</endtimeutc>
+      <program id="2000" name="Väder från hela landet" />
+      <channel id="132" name="P1" />
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826136</episodeid>
+      <title>P1-morgon</title>
+      <description>P1-morgon bjuder på de senaste nyheterna, men vi nöjer oss inte där. Vi tar nyheterna djupare.</description>
+      <starttimeutc>2016-12-29T05:59:15Z</starttimeutc>
+      <endtimeutc>2016-12-29T06:00:00Z</endtimeutc>
+      <program id="1650" name="P1-morgon" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/1650/0b677a76-518a-4c84-a15b-bdd4b0e8343b.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/1650/0b677a76-518a-4c84-a15b-bdd4b0e8343b.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826136</episodeid>
+      <title>Morgoneko</title>
+      <description>Här hör du Ekots nyhetssändningar. Senaste nytt - dygnet runt, året om.</description>
+      <starttimeutc>2016-12-29T06:00:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T06:18:00Z</endtimeutc>
+      <program id="4540" name="Ekot" />
+      <channel id="132" name="P1" />
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826136</episodeid>
+      <title>P1-morgon</title>
+      <description>P1-morgon bjuder på de senaste nyheterna, men vi nöjer oss inte där. Vi tar nyheterna djupare.</description>
+      <starttimeutc>2016-12-29T06:18:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T06:30:00Z</endtimeutc>
+      <program id="1650" name="P1-morgon" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/1650/0b677a76-518a-4c84-a15b-bdd4b0e8343b.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/1650/0b677a76-518a-4c84-a15b-bdd4b0e8343b.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826136</episodeid>
+      <title>Ekonyheter</title>
+      <description>Här hör du Ekots nyhetssändningar. Senaste nytt - dygnet runt, året om.</description>
+      <starttimeutc>2016-12-29T06:30:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T06:32:00Z</endtimeutc>
+      <program id="4540" name="Ekot" />
+      <channel id="132" name="P1" />
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826136</episodeid>
+      <title>Ekonomieko</title>
+      <description>Ekonomiekot är Ekots nyhetsprogram om senaste nytt i ekonomins värld.</description>
+      <starttimeutc>2016-12-29T06:32:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T06:36:00Z</endtimeutc>
+      <program id="178" name="Ekonomiekot" />
+      <channel id="132" name="P1" />
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826136</episodeid>
+      <title>Nyheter från Vetenskapsradion</title>
+      <description>Vetenskapsnyheter från alla tänkbara forskningsområden. Här får du som lyssnare ofta höra nyheten innan den blir uppmärksammad av övriga media. Sänds i P1.</description>
+      <starttimeutc>2016-12-29T06:36:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T06:39:00Z</endtimeutc>
+      <program id="406" name="Vetenskapsradion" />
+      <channel id="132" name="P1" />
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826136</episodeid>
+      <title>P1-morgon</title>
+      <description>P1-morgon bjuder på de senaste nyheterna, men vi nöjer oss inte där. Vi tar nyheterna djupare.</description>
+      <starttimeutc>2016-12-29T06:39:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T06:46:00Z</endtimeutc>
+      <program id="1650" name="P1-morgon" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/1650/0b677a76-518a-4c84-a15b-bdd4b0e8343b.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/1650/0b677a76-518a-4c84-a15b-bdd4b0e8343b.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826136</episodeid>
+      <title>Kulturnytt</title>
+      <description>Nyheter, reportage, recensioner och fördjupning från Kulturredaktionen P1.</description>
+      <starttimeutc>2016-12-29T06:46:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T06:55:00Z</endtimeutc>
+      <program id="478" name="P1 Kultur/Kulturnytt" />
+      <channel id="132" name="P1" />
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826136</episodeid>
+      <title>Land- och sjöväder</title>
+      <description>I landväder och sjöväder får du en översikt, varningar och regionala väderprognoser från SMHI för ett dygn framåt.</description>
+      <starttimeutc>2016-12-29T06:55:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T06:59:15Z</endtimeutc>
+      <program id="2000" name="Väder från hela landet" />
+      <channel id="132" name="P1" />
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826136</episodeid>
+      <title>P1-morgon</title>
+      <description>P1-morgon bjuder på de senaste nyheterna, men vi nöjer oss inte där. Vi tar nyheterna djupare.</description>
+      <starttimeutc>2016-12-29T06:59:15Z</starttimeutc>
+      <endtimeutc>2016-12-29T07:00:00Z</endtimeutc>
+      <program id="1650" name="P1-morgon" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/1650/0b677a76-518a-4c84-a15b-bdd4b0e8343b.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/1650/0b677a76-518a-4c84-a15b-bdd4b0e8343b.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826136</episodeid>
+      <title>Morgoneko</title>
+      <description>Här hör du Ekots nyhetssändningar. Senaste nytt - dygnet runt, året om.</description>
+      <starttimeutc>2016-12-29T07:00:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T07:15:00Z</endtimeutc>
+      <program id="4540" name="Ekot" />
+      <channel id="132" name="P1" />
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826136</episodeid>
+      <title>P1-morgon</title>
+      <description>P1-morgon bjuder på de senaste nyheterna, men vi nöjer oss inte där. Vi tar nyheterna djupare.</description>
+      <starttimeutc>2016-12-29T07:15:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T07:30:00Z</endtimeutc>
+      <program id="1650" name="P1-morgon" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/1650/0b677a76-518a-4c84-a15b-bdd4b0e8343b.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/1650/0b677a76-518a-4c84-a15b-bdd4b0e8343b.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826136</episodeid>
+      <title>Ekonyheter</title>
+      <description>Här hör du Ekots nyhetssändningar. Senaste nytt - dygnet runt, året om.</description>
+      <starttimeutc>2016-12-29T07:30:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T07:32:00Z</endtimeutc>
+      <program id="4540" name="Ekot" />
+      <channel id="132" name="P1" />
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826136</episodeid>
+      <title>Ekonomieko</title>
+      <description>Ekonomiekot är Ekots nyhetsprogram om senaste nytt i ekonomins värld.</description>
+      <starttimeutc>2016-12-29T07:32:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T07:36:00Z</endtimeutc>
+      <program id="178" name="Ekonomiekot" />
+      <channel id="132" name="P1" />
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826136</episodeid>
+      <title>Nyheter från Vetenskapsradion</title>
+      <description>Vetenskapsnyheter från alla tänkbara forskningsområden. Här får du som lyssnare ofta höra nyheten innan den blir uppmärksammad av övriga media. Sänds i P1.</description>
+      <starttimeutc>2016-12-29T07:36:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T07:41:00Z</endtimeutc>
+      <program id="406" name="Vetenskapsradion" />
+      <channel id="132" name="P1" />
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826136</episodeid>
+      <title>P1-morgon</title>
+      <description>P1-morgon bjuder på de senaste nyheterna, men vi nöjer oss inte där. Vi tar nyheterna djupare.</description>
+      <starttimeutc>2016-12-29T07:41:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T07:54:00Z</endtimeutc>
+      <program id="1650" name="P1-morgon" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/1650/0b677a76-518a-4c84-a15b-bdd4b0e8343b.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/1650/0b677a76-518a-4c84-a15b-bdd4b0e8343b.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826136</episodeid>
+      <title>Kulturnytt</title>
+      <description>Nyheter, reportage, recensioner och fördjupning från Kulturredaktionen P1.</description>
+      <starttimeutc>2016-12-29T07:54:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T07:59:00Z</endtimeutc>
+      <program id="478" name="P1 Kultur/Kulturnytt" />
+      <channel id="132" name="P1" />
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826136</episodeid>
+      <title>P1-morgon</title>
+      <description>P1-morgon bjuder på de senaste nyheterna, men vi nöjer oss inte där. Vi tar nyheterna djupare.</description>
+      <starttimeutc>2016-12-29T07:59:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T08:00:00Z</endtimeutc>
+      <program id="1650" name="P1-morgon" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/1650/0b677a76-518a-4c84-a15b-bdd4b0e8343b.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/1650/0b677a76-518a-4c84-a15b-bdd4b0e8343b.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826136</episodeid>
+      <title>Morgoneko</title>
+      <description>Här hör du Ekots nyhetssändningar. Senaste nytt - dygnet runt, året om.</description>
+      <starttimeutc>2016-12-29T08:00:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T08:14:00Z</endtimeutc>
+      <program id="4540" name="Ekot" />
+      <channel id="132" name="P1" />
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826136</episodeid>
+      <title>P1-morgon</title>
+      <description>P1-morgon bjuder på de senaste nyheterna, men vi nöjer oss inte där. Vi tar nyheterna djupare.</description>
+      <starttimeutc>2016-12-29T08:14:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T08:30:00Z</endtimeutc>
+      <program id="1650" name="P1-morgon" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/1650/0b677a76-518a-4c84-a15b-bdd4b0e8343b.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/1650/0b677a76-518a-4c84-a15b-bdd4b0e8343b.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826155</episodeid>
+      <title>Ring P1!</title>
+      <subtitle>med Emmy Rasper</subtitle>
+      <description>Ring P1 är yttrandefrihet i sin riktiga mening. Det är lyssnarnas eget debattprogram där man ringer in och skapar diskussioner, ring 099-51010 du också!</description>
+      <starttimeutc>2016-12-29T08:30:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T09:00:00Z</endtimeutc>
+      <program id="1120" name="Ring P1 - 099-510 10" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/1120/c628157b-f5f5-4c7c-b26e-451c31b4f296.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/1120/c628157b-f5f5-4c7c-b26e-451c31b4f296.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>830029</episodeid>
+      <title>Ekonyheter</title>
+      <description>Här hör du Ekots nyhetssändningar. Senaste nytt - dygnet runt, året om.</description>
+      <starttimeutc>2016-12-29T09:00:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T09:03:05Z</endtimeutc>
+      <program id="4540" name="Ekot" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826156</episodeid>
+      <title>Meny med Tomas Tengby</title>
+      <description>Sveriges Radios matprogram som tittar djupt i grytorna. </description>
+      <starttimeutc>2016-12-29T09:03:05Z</starttimeutc>
+      <endtimeutc>2016-12-29T09:35:00Z</endtimeutc>
+      <program id="950" name="Meny " />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/950/4aa5c381-be64-4a25-aa41-d181820dedab.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/950/4aa5c381-be64-4a25-aa41-d181820dedab.jpg?preset=original</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826157</episodeid>
+      <title>Funk i P1</title>
+      <subtitle>: Välkommen till husarresten</subtitle>
+      <description>Programmet som visar hur samhället funkar om du har någon form av funktionsvariation. </description>
+      <starttimeutc>2016-12-29T09:35:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T10:00:00Z</endtimeutc>
+      <program id="4970" name="Funk i P1 " />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/4970/3686386_2048_1152.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/4970/3686386_2048_1152.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>830030</episodeid>
+      <title>Ekonyheter</title>
+      <description>Här hör du Ekots nyhetssändningar. Senaste nytt - dygnet runt, året om.</description>
+      <starttimeutc>2016-12-29T10:00:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T10:04:00Z</endtimeutc>
+      <program id="4540" name="Ekot" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826158</episodeid>
+      <title>Radiopsykologen</title>
+      <description>Radioprogrammet där du bestämmer innehållet utifrån dina tankar och funderingar.</description>
+      <starttimeutc>2016-12-29T10:04:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T10:33:00Z</endtimeutc>
+      <program id="3637" name="Radiopsykologen" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/3637/69d8999f-bdb9-47ae-ac0a-f189480e2331.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/3637/69d8999f-bdb9-47ae-ac0a-f189480e2331.jpg?preset=original</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <title>Ekonyheter</title>
+      <description />
+      <starttimeutc>2016-12-29T10:33:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T10:35:00Z</endtimeutc>
+      <program id="4540" name="Ekot" />
+      <channel id="132" name="P1" />
+    </scheduledepisode>
+    <scheduledepisode>
+      <title>Radioföljetongen</title>
+      <subtitle>: Memoarer av Bob Dylan, del 17</subtitle>
+      <description />
+      <starttimeutc>2016-12-29T10:35:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T11:00:00Z</endtimeutc>
+      <program id="1111" name="Radioföljetongen" />
+      <channel id="132" name="P1" />
+    </scheduledepisode>
+    <scheduledepisode>
+      <title>Tolvslaget</title>
+      <description />
+      <starttimeutc>2016-12-29T11:00:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T11:01:00Z</endtimeutc>
+      <program id="0" />
+      <channel id="132" name="P1" />
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826159</episodeid>
+      <title>Dagens dikt</title>
+      <description>Författare och skådespelare läser poesi från nu och då, när och fjärran. </description>
+      <starttimeutc>2016-12-29T11:00:50Z</starttimeutc>
+      <endtimeutc>2016-12-29T11:10:00Z</endtimeutc>
+      <program id="2031" name="Dagens dikt" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/2031/3164731_2048_1152.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/2031/3164731_2048_1152.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826160</episodeid>
+      <title>Vetandets värld</title>
+      <subtitle>: Hur uppstod djur på jorden?  </subtitle>
+      <description>Om vetenskap, forskningsrön och ny teknik som förändrar vår värld. Varje vardag ger programmet fördjupning om vetenskap. Det kan handla om allt från skalbaggar till det senaste inom hiv-forskningen.</description>
+      <starttimeutc>2016-12-29T11:10:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T11:30:00Z</endtimeutc>
+      <program id="412" name="Vetandets värld" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/412/7405a42d-6c33-4e19-8e5f-239041233ba2.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/412/7405a42d-6c33-4e19-8e5f-239041233ba2.jpg?preset=original</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826161</episodeid>
+      <title>Luncheko</title>
+      <description>Här hör du Ekots nyhetssändningar. Senaste nytt - dygnet runt, året om.</description>
+      <starttimeutc>2016-12-29T11:30:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T11:55:00Z</endtimeutc>
+      <program id="4540" name="Ekot" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826162</episodeid>
+      <title>Land- och sjöväder</title>
+      <description>I landväder och sjöväder får du en översikt, varningar och regionala väderprognoser från SMHI för ett dygn framåt.</description>
+      <starttimeutc>2016-12-29T11:55:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T12:00:00Z</endtimeutc>
+      <program id="2000" name="Väder från hela landet" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/2000/601ada6b-aea9-4d9a-ab61-15d388461b3a.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/2000/601ada6b-aea9-4d9a-ab61-15d388461b3a.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826163</episodeid>
+      <title>Vinter i P1</title>
+      <subtitle>med Sakine Madon</subtitle>
+      <description>Genomtänkt och begåvad radio som roar och berör. Intressanta människor berättar om sina upplevelser och spelar sin favoritmusik.</description>
+      <starttimeutc>2016-12-29T12:00:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T13:30:00Z</endtimeutc>
+      <program id="2071" name="Sommar &amp; Vinter i P1" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/2071/5f232e57-6ac0-45d3-840b-25078f0aa028.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/2071/5f232e57-6ac0-45d3-840b-25078f0aa028.jpg?preset=original</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826164</episodeid>
+      <title>Allvarligt talat</title>
+      <subtitle>med Lena Andersson</subtitle>
+      <description>Horace Engdahl och Lena Andersson svarar och samtalar om svåra och tankeväckande frågor.</description>
+      <starttimeutc>2016-12-29T13:30:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T14:00:00Z</endtimeutc>
+      <program id="3143" name="Allvarligt talat" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/3143/21e8ce52-e193-4a28-8558-c3630a1e0f24.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/3143/21e8ce52-e193-4a28-8558-c3630a1e0f24.jpg?preset=original</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>830033</episodeid>
+      <title>Ekonyheter</title>
+      <description>Här hör du Ekots nyhetssändningar. Senaste nytt - dygnet runt, året om.</description>
+      <starttimeutc>2016-12-29T14:00:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T14:03:00Z</endtimeutc>
+      <program id="4540" name="Ekot" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>828249</episodeid>
+      <title>Radiosporten</title>
+      <description>Med det senaste i sportens värld.</description>
+      <starttimeutc>2016-12-29T14:03:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T14:04:00Z</endtimeutc>
+      <program id="2895" name="Radiosportens nyhetssändningar" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/2895/3668065_2048_1152.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/2895/3668065_2048_1152.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826165</episodeid>
+      <title>Nordegren och Epstein i P1</title>
+      <description>En personlig talkshow om aktualiteter och nyheter, i P1 Sveriges Radio. Med Thomas Nordegren och Louise Epstein.</description>
+      <starttimeutc>2016-12-29T14:04:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T14:45:00Z</endtimeutc>
+      <program id="4058" name="Nordegren &amp; Epstein i P1" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/4058/3282662_2048_1152.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/4058/3282662_2048_1152.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826166</episodeid>
+      <title>Kulturnytt</title>
+      <description>Nyheter, reportage, recensioner och fördjupning från Kulturredaktionen P1.</description>
+      <starttimeutc>2016-12-29T14:45:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T14:55:00Z</endtimeutc>
+      <program id="478" name="P1 Kultur/Kulturnytt" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/478/3532983_2048_1152.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/478/3532983_2048_1152.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826167</episodeid>
+      <title>Sjöväder</title>
+      <description>I landväder och sjöväder får du en översikt, varningar och regionala väderprognoser från SMHI för ett dygn framåt.</description>
+      <starttimeutc>2016-12-29T14:55:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T15:00:00Z</endtimeutc>
+      <program id="2000" name="Väder från hela landet" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/2000/601ada6b-aea9-4d9a-ab61-15d388461b3a.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/2000/601ada6b-aea9-4d9a-ab61-15d388461b3a.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>830034</episodeid>
+      <title>Ekonyheter</title>
+      <description>Här hör du Ekots nyhetssändningar. Senaste nytt - dygnet runt, året om.</description>
+      <starttimeutc>2016-12-29T15:00:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T15:03:05Z</endtimeutc>
+      <program id="4540" name="Ekot" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826168</episodeid>
+      <title>Studio Ett</title>
+      <description>Fördjupar dagens stora händelser i Sverige och världen.</description>
+      <starttimeutc>2016-12-29T15:03:05Z</starttimeutc>
+      <endtimeutc>2016-12-29T15:45:00Z</endtimeutc>
+      <program id="1637" name="Studio Ett" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/1637/3167805_2048_1152.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/1637/3167805_2048_1152.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826168</episodeid>
+      <title>Dagens Eko </title>
+      <subtitle>kvart i fem</subtitle>
+      <description>Här hör du Ekots nyhetssändningar. Senaste nytt - dygnet runt, året om.</description>
+      <starttimeutc>2016-12-29T15:45:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T16:00:05Z</endtimeutc>
+      <program id="4540" name="Ekot" />
+      <channel id="132" name="P1" />
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826168</episodeid>
+      <title>Studio Ett</title>
+      <description>Fördjupar dagens stora händelser i Sverige och världen.</description>
+      <starttimeutc>2016-12-29T16:00:05Z</starttimeutc>
+      <endtimeutc>2016-12-29T16:45:00Z</endtimeutc>
+      <program id="1637" name="Studio Ett" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/1637/3167805_2048_1152.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/1637/3167805_2048_1152.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826169</episodeid>
+      <title>Dagens Eko </title>
+      <description>Här hör du Ekots nyhetssändningar. Senaste nytt - dygnet runt, året om.</description>
+      <starttimeutc>2016-12-29T16:45:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T17:01:00Z</endtimeutc>
+      <program id="4540" name="Ekot" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826170</episodeid>
+      <title>Ekonomiekot</title>
+      <description>Ekonomiekot är Ekots nyhetsprogram om senaste nytt i ekonomins värld.</description>
+      <starttimeutc>2016-12-29T17:01:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T17:08:00Z</endtimeutc>
+      <program id="178" name="Ekonomiekot" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/178/3634487_2048_1152.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/178/3634487_2048_1152.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826171</episodeid>
+      <title>Radiosporten</title>
+      <description>Med det senaste i sportens värld.</description>
+      <starttimeutc>2016-12-29T17:08:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T17:09:00Z</endtimeutc>
+      <program id="2895" name="Radiosportens nyhetssändningar" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/2895/3668065_2048_1152.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/2895/3668065_2048_1152.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <title>Kulturnytt</title>
+      <description />
+      <starttimeutc>2016-12-29T17:09:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T17:14:00Z</endtimeutc>
+      <program id="478" name="P1 Kultur/Kulturnytt" />
+      <channel id="132" name="P1" />
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826172</episodeid>
+      <title>P1 Kultur</title>
+      <subtitle>Special: "Att minnas Babij Jar"</subtitle>
+      <description>Nyheter, reportage, recensioner och fördjupning från Kulturredaktionen P1.</description>
+      <starttimeutc>2016-12-29T17:14:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T18:00:00Z</endtimeutc>
+      <program id="478" name="P1 Kultur/Kulturnytt" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/478/3532983_2048_1152.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/478/3532983_2048_1152.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>829955</episodeid>
+      <title>Ekonyheter</title>
+      <description>Här hör du Ekots nyhetssändningar. Senaste nytt - dygnet runt, året om.</description>
+      <starttimeutc>2016-12-29T18:00:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T18:03:00Z</endtimeutc>
+      <program id="4540" name="Ekot" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826173</episodeid>
+      <title>Vetenskapsradion Klotet</title>
+      <subtitle>: De goda exemplens makt</subtitle>
+      <description>Vetenskapsradions internationella miljöprogram </description>
+      <starttimeutc>2016-12-29T18:03:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T18:35:00Z</endtimeutc>
+      <program id="3345" name="Klotet" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/3345/739b1360-72b5-49fb-ae94-e31089aba28c.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/3345/739b1360-72b5-49fb-ae94-e31089aba28c.jpg?preset=original</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <title>Radioföljetongen</title>
+      <subtitle>: Memoarer av Bob Dylan, del 17</subtitle>
+      <description />
+      <starttimeutc>2016-12-29T18:35:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T19:00:00Z</endtimeutc>
+      <program id="1111" name="Radioföljetongen" />
+      <channel id="132" name="P1" />
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>829956</episodeid>
+      <title>Ekonyheter</title>
+      <description>Här hör du Ekots nyhetssändningar. Senaste nytt - dygnet runt, året om.</description>
+      <starttimeutc>2016-12-29T19:00:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T19:03:00Z</endtimeutc>
+      <program id="4540" name="Ekot" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826158</episodeid>
+      <title>Radiopsykologen</title>
+      <description>Radioprogrammet där du bestämmer innehållet utifrån dina tankar och funderingar.</description>
+      <starttimeutc>2016-12-29T19:03:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T19:35:00Z</endtimeutc>
+      <program id="3637" name="Radiopsykologen" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/3637/69d8999f-bdb9-47ae-ac0a-f189480e2331.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/3637/69d8999f-bdb9-47ae-ac0a-f189480e2331.jpg?preset=original</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826160</episodeid>
+      <title>Vetandets värld</title>
+      <subtitle>: Hur uppstod djur på jorden?  </subtitle>
+      <description>Om vetenskap, forskningsrön och ny teknik som förändrar vår värld. Varje vardag ger programmet fördjupning om vetenskap. Det kan handla om allt från skalbaggar till det senaste inom hiv-forskningen.</description>
+      <starttimeutc>2016-12-29T19:35:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T19:55:00Z</endtimeutc>
+      <program id="412" name="Vetandets värld" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/412/7405a42d-6c33-4e19-8e5f-239041233ba2.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/412/7405a42d-6c33-4e19-8e5f-239041233ba2.jpg?preset=original</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <title>Klartext</title>
+      <subtitle>- nyheter på ett enklare sätt</subtitle>
+      <description />
+      <starttimeutc>2016-12-29T19:55:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T20:00:00Z</endtimeutc>
+      <program id="493" name="Klartext" />
+      <channel id="132" name="P1" />
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>829957</episodeid>
+      <title>Ekonyheter</title>
+      <description>Här hör du Ekots nyhetssändningar. Senaste nytt - dygnet runt, året om.</description>
+      <starttimeutc>2016-12-29T20:00:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T20:03:05Z</endtimeutc>
+      <program id="4540" name="Ekot" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>827302</episodeid>
+      <title>Lärarrummet</title>
+      <description>Porträtt av Sveriges främsta pedagoger</description>
+      <starttimeutc>2016-12-29T20:03:05Z</starttimeutc>
+      <endtimeutc>2016-12-29T20:35:00Z</endtimeutc>
+      <program id="0" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/4421/f22d0e4e-3ef8-4250-8678-458baceb816f.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/4421/f22d0e4e-3ef8-4250-8678-458baceb816f.jpg?preset=original</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <title>Ring P1!</title>
+      <subtitle>med Emmy Rasper</subtitle>
+      <description />
+      <starttimeutc>2016-12-29T20:35:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T20:45:00Z</endtimeutc>
+      <program id="1120" name="Ring P1 - 099-510 10" />
+      <channel id="132" name="P1" />
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826141</episodeid>
+      <title>Tankar för dagen</title>
+      <subtitle>med Per J Andersson, journalist och världsresenär</subtitle>
+      <description>Det tar bara några minuter - stanna upp ett tag och lyssna! Tankar för dagen ger en stunds eftertanke mitt i morgonens nyhetsflöde. Det kan vara en betraktelse över någonting som just skett i världen eller tankar kring händelser i det mindre, privata.</description>
+      <starttimeutc>2016-12-29T20:45:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T20:50:00Z</endtimeutc>
+      <program id="1165" name="Tankar för dagen" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/1165/ccdfdd69-fb30-4d61-8419-e42b3224bd6e.gif?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/1165/ccdfdd69-fb30-4d61-8419-e42b3224bd6e.gif?preset=original</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826174</episodeid>
+      <title>Land- och sjöväder</title>
+      <description>I landväder och sjöväder får du en översikt, varningar och regionala väderprognoser från SMHI för ett dygn framåt.</description>
+      <starttimeutc>2016-12-29T20:50:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T21:00:00Z</endtimeutc>
+      <program id="2000" name="Väder från hela landet" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/2000/601ada6b-aea9-4d9a-ab61-15d388461b3a.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/2000/601ada6b-aea9-4d9a-ab61-15d388461b3a.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>829958</episodeid>
+      <title>Ekonyheter</title>
+      <description>Här hör du Ekots nyhetssändningar. Senaste nytt - dygnet runt, året om.</description>
+      <starttimeutc>2016-12-29T21:00:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T21:05:05Z</endtimeutc>
+      <program id="4540" name="Ekot" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826163</episodeid>
+      <title>Vinter i P1</title>
+      <subtitle>med Sakine Madon</subtitle>
+      <description>Genomtänkt och begåvad radio som roar och berör. Intressanta människor berättar om sina upplevelser och spelar sin favoritmusik.</description>
+      <starttimeutc>2016-12-29T21:05:05Z</starttimeutc>
+      <endtimeutc>2016-12-29T22:35:00Z</endtimeutc>
+      <program id="2071" name="Sommar &amp; Vinter i P1" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/2071/5f232e57-6ac0-45d3-840b-25078f0aa028.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/2071/5f232e57-6ac0-45d3-840b-25078f0aa028.jpg?preset=original</imageurltemplate>
+    </scheduledepisode>
+    <scheduledepisode>
+      <episodeid>826164</episodeid>
+      <title>Allvarligt talat</title>
+      <subtitle>med Lena Andersson</subtitle>
+      <description>Horace Engdahl och Lena Andersson svarar och samtalar om svåra och tankeväckande frågor.</description>
+      <starttimeutc>2016-12-29T22:35:00Z</starttimeutc>
+      <endtimeutc>2016-12-29T23:00:00Z</endtimeutc>
+      <program id="3143" name="Allvarligt talat" />
+      <channel id="132" name="P1" />
+      <imageurl>http://static-cdn.sr.se/sida/images/3143/21e8ce52-e193-4a28-8558-c3630a1e0f24.jpg?preset=api-default-square</imageurl>
+      <imageurltemplate>http://static-cdn.sr.se/sida/images/3143/21e8ce52-e193-4a28-8558-c3630a1e0f24.jpg?preset=original</imageurltemplate>
+    </scheduledepisode>
+  </schedule>
+</sr>

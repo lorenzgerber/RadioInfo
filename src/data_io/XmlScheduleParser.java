@@ -10,6 +10,9 @@ import org.w3c.dom.NodeList;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+import static java.time.format.DateTimeFormatter.ISO_LOCAL_DATE;
 
 /**
  * Created by loge on 2016-12-23.
@@ -20,7 +23,30 @@ public class XmlScheduleParser {
     ProgramListModel programs = new ProgramListModel();
 
 
-    public XmlScheduleParser(String stringUrl, LocalDate date ){
+    public XmlScheduleParser(int channelId, LocalDate localDate){
+        String SCHEDULE_URL = "http://api.sr.se/api/v2/scheduledepisodes?channelid=";
+        StringBuilder urlBuilder = new StringBuilder(SCHEDULE_URL);
+        urlBuilder.append(channelId);
+
+        // add date as string
+        String formattedString = localDate.format(ISO_LOCAL_DATE);
+        urlBuilder.append("&date=" + formattedString);
+
+        // choose large size to include all programs
+        urlBuilder.append("&size=1000");
+
+        this.ScheduleParser(urlBuilder.toString());
+
+    }
+
+
+    public XmlScheduleParser(String stringUrl){
+
+        this.ScheduleParser(stringUrl);
+
+    }
+
+    private void ScheduleParser(String stringUrl){
 
         XmlReader reader = new XmlReader(stringUrl);
 

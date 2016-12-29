@@ -14,6 +14,7 @@ public class RadioInfoMain {
 
 
 
+
     public static void main(String[] args){
 
         SwingUtilities.invokeLater(new Runnable() {
@@ -22,7 +23,7 @@ public class RadioInfoMain {
             public void run() {
 
                 ChannelListModel channels = new ChannelListModel();
-                XmlChannelParser channelGetter = new XmlChannelParser();
+                XmlChannelParser channelGetter = new XmlChannelParser(100);
                 for(ChannelModel channel : channelGetter){
                     channels.add(channel);
                 }

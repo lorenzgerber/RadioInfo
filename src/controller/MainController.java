@@ -7,6 +7,7 @@ import model.ChannelModel;
 import model.ProgramListModel;
 import view.*;
 import javax.swing.JMenuItem;
+import java.time.LocalDate;
 
 
 /**
@@ -32,7 +33,9 @@ public class MainController {
         this.gui = gui;
         this.channels = channels;
         this.currentChannel = channels.get(0);
-        //ProgramListModel currentSchedule = new XmlScheduleParser();
+        LocalDate date = LocalDate.now();
+        XmlScheduleParser parser = new XmlScheduleParser(164, date);
+        ProgramListModel currentPrograms = parser.getProgramList();
 
         // add listeners in file menu
         for(JMenuItem item : gui.menuBar.fileMenu.menuItems){
