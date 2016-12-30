@@ -11,4 +11,9 @@ public class ProgramListModel extends ArrayList<ProgramModel> {
 
     }
 
+    public void pruneList(){
+
+    }
+
+
 }

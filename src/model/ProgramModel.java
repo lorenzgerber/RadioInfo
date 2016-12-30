@@ -33,6 +33,19 @@ public class ProgramModel {
         this.endTime = endTime;
     }
 
+    public void setImageUrl(String imageUrl){
+        this.imageUrl = imageUrl;
+    }
+
+    public LocalDateTime getStartTime(){
+        return this.startTime;
+    }
+
+    public LocalDateTime getEndTime(){
+        return this.endTime;
+    }
+
+
 
 
 

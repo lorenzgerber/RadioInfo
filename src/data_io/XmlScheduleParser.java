@@ -11,16 +11,18 @@ import org.w3c.dom.NodeList;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Iterator;
 
 import static java.time.format.DateTimeFormatter.ISO_LOCAL_DATE;
 
 /**
  * Created by loge on 2016-12-23.
  */
-public class XmlScheduleParser {
+public class XmlScheduleParser implements Iterable<ProgramModel>{
 
     NodeList nodeList;
-    ProgramListModel programs = new ProgramListModel();
+    ProgramListModel programList = new ProgramListModel();
 
 
     public XmlScheduleParser(int channelId, LocalDate localDate){
@@ -70,11 +72,20 @@ public class XmlScheduleParser {
                 String name = eElementProgram.getAttribute("name");
                 tempProgram = new ProgramModel(programid, name);
 
-                String description = eElementEpisode
+                // parse Description, if available
+                Node descriptionNode = eElementEpisode
                         .getElementsByTagName("description")
-                        .item(0).getTextContent();
-                if (description.length()>0){
-                    tempProgram.setDescription(description);
+                        .item(0);
+                if (descriptionNode != null){
+                    tempProgram.setDescription(descriptionNode.getTextContent());
+                }
+
+                // parse image url, if available
+                Node imageUrlNode = eElementEpisode
+                        .getElementsByTagName("imageurl")
+                        .item(0);
+                if(imageUrlNode != null){
+                    tempProgram.setImageUrl(imageUrlNode.getTextContent());
                 }
 
                 // parse start time
@@ -95,15 +106,15 @@ public class XmlScheduleParser {
                 tempProgram.setStartTime(start);
                 tempProgram.setEndTime(end);
 
-                programs.add(tempProgram);
+                programList.add(tempProgram);
 
             }
         }
 
     }
 
-    public ProgramListModel getProgramList(){
-        return this.programs;
+    public Iterator<ProgramModel> iterator() {
+        return programList.iterator();
     }
 
 
