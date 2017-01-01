@@ -2,6 +2,7 @@ package model;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * Created by loge on 2016-12-22.
@@ -16,6 +17,13 @@ public class ChannelListModel extends ArrayList<ChannelModel> {
 
     }
 
+    public void populateList(Iterator<ChannelModel> iterator){
+        while(iterator.hasNext()){
+            add(iterator.next());
+        }
+    }
+
+    /*
     public void loadChannelListEntries(){
 
         ArrayList<LocalDateTime> queryDates = new ArrayList<LocalDateTime>();
@@ -31,6 +39,7 @@ public class ChannelListModel extends ArrayList<ChannelModel> {
         }
 
     }
+    */
 
 
 

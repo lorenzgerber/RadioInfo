@@ -1,7 +1,5 @@
 package data_io;
 
-import model.ChannelListModel;
-import model.ChannelModel;
 import model.ProgramListModel;
 import model.ProgramModel;
 import org.w3c.dom.Element;
@@ -10,7 +8,6 @@ import org.w3c.dom.NodeList;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -26,19 +23,23 @@ public class XmlScheduleParser implements Iterable<ProgramModel>{
 
 
     public XmlScheduleParser(int channelId, LocalDate localDate){
-        String SCHEDULE_URL = "http://api.sr.se/api/v2/scheduledepisodes?channelid=";
-        StringBuilder urlBuilder = new StringBuilder(SCHEDULE_URL);
-        urlBuilder.append(channelId);
 
-        // add date as string
-        String formattedString = localDate.format(ISO_LOCAL_DATE);
-        urlBuilder.append("&date=" + formattedString);
 
-        // choose large size to include all programs
-        urlBuilder.append("&size=1000");
+        ArrayList<LocalDate> threeDates = this.threeDateRange(localDate);
 
-        this.ScheduleParser(urlBuilder.toString());
+        for(LocalDate date : threeDates){
+            String SCHEDULE_URL = "http://api.sr.se/api/v2/scheduledepisodes?channelid=";
+            StringBuilder urlBuilder = new StringBuilder(SCHEDULE_URL);
+            urlBuilder.append(channelId);
+            // add date as string
+            String formattedString = date.format(ISO_LOCAL_DATE);
+            urlBuilder.append("&date=" + formattedString);
 
+            // choose large size to include all programs
+            urlBuilder.append("&size=1000");
+
+            this.ScheduleParser(urlBuilder.toString());
+        }
     }
 
 
@@ -115,6 +116,17 @@ public class XmlScheduleParser implements Iterable<ProgramModel>{
 
     public Iterator<ProgramModel> iterator() {
         return programList.iterator();
+    }
+
+    private ArrayList<LocalDate> threeDateRange(LocalDate middleDate){
+        ArrayList<LocalDate> threeDateRange = new ArrayList<>();
+        LocalDate dateToday = middleDate;
+        LocalDate dateTomorrow = dateToday.plusDays(1);
+        LocalDate dateYesterday = dateToday.minusDays(1);
+        threeDateRange.add(dateYesterday);
+        threeDateRange.add(dateToday);
+        threeDateRange.add(dateTomorrow);
+        return threeDateRange;
     }
 
 

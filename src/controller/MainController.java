@@ -1,5 +1,6 @@
 package controller;
 
+import data_io.XmlChannelParser;
 import data_io.XmlReader;
 import data_io.XmlScheduleParser;
 import model.ChannelListModel;
@@ -7,7 +8,8 @@ import model.ChannelModel;
 import model.ProgramListModel;
 import model.ProgramModel;
 import view.*;
-import javax.swing.JMenuItem;
+
+import javax.swing.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -44,32 +46,26 @@ public class MainController {
 
         this.gui = gui;
         this.channels = channels;
+
+        this.currentPrograms = new ProgramListModel();
+
+
+        // Populate Channels List
+        XmlChannelParser channelGetter = new XmlChannelParser(100);
+        this.channels.populateList(channelGetter.iterator());
+
+
+        // todo have to move this in observer pattern
+        // update view data
         this.currentChannel = channels.get(0);
+        gui.menuBar.channelMenu.updateChannels();
 
-        ProgramListModel tempPrograms = new ProgramListModel();
-        ArrayList<LocalDate> dateRange = this.ThreeDateRange();
-        for(LocalDate date : dateRange){
-            XmlScheduleParser parser = new XmlScheduleParser(164, date);
-            for(ProgramModel program : parser){
-                tempPrograms.add(program);
-            }
-        }
 
-        // Prune ProgramListModel currentPrograms to +/- 12h from now
-        currentPrograms = tempPrograms.stream()
-                .filter(x -> x.getStartTime().isAfter(LocalDateTime.now().minusHours(12)))
-                .filter(x -> x.getEndTime().isBefore(LocalDateTime.now().plusHours(12)))
-                .collect(Collectors.toCollection(ProgramListModel::new));
-
-        // Sort ProgamListModel according Program start time
-        Collections.sort(currentPrograms, new Comparator<ProgramModel>(){
-            public int compare(ProgramModel o1, ProgramModel o2){
-                if(o1.getStartTime().equals(o2.getStartTime()))
-                    return 0;
-                return o1.getStartTime().isBefore(o2.getStartTime()) ? -1 : 1;
-            }
-        });
-
+        // Populate Programs List
+        XmlScheduleParser parser = new XmlScheduleParser(164, LocalDate.now());
+        currentPrograms.populateList(parser.iterator());
+        currentPrograms.prune12Hours();
+        currentPrograms.sortTime();
 
 
         // add listeners in file menu
@@ -85,18 +81,13 @@ public class MainController {
         }
 
         gui.show();
+
+        //todo this is just a test how to update view. will move in observer pattern
+        gui.menuBar.repaint();
+
     }
 
-    public ArrayList<LocalDate> ThreeDateRange(){
-        ArrayList<LocalDate> threeDateRange = new ArrayList<>();
-        LocalDate dateToday = LocalDate.now();
-        LocalDate dateTomorrow = dateToday.plusDays(1);
-        LocalDate dateYesterday = dateToday.minusDays(1);
-        threeDateRange.add(dateYesterday);
-        threeDateRange.add(dateToday);
-        threeDateRange.add(dateTomorrow);
-        return threeDateRange;
-    }
+
 
 
 }

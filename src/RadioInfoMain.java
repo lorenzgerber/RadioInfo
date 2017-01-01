@@ -23,10 +23,10 @@ public class RadioInfoMain {
             public void run() {
 
                 ChannelListModel channels = new ChannelListModel();
-                XmlChannelParser channelGetter = new XmlChannelParser(100);
-                for(ChannelModel channel : channelGetter){
-                    channels.add(channel);
-                }
+                /*
+
+                */
+
 
                 Gui gui = new Gui("Radio Info", channels);
                 MainController main = new MainController(gui, channels);
