@@ -50,20 +50,18 @@ public class MainController {
         this.currentPrograms = new ProgramListModel();
 
 
-        // Populate Channels List
+        // (re)load Channels List
         XmlChannelParser channelGetter = new XmlChannelParser(100);
-        this.channels.populateList(channelGetter.iterator());
+        this.channels.loadList(channelGetter.iterator());
 
-
-        // todo have to move this in observer pattern
-        // update view data
+        // initially set current channel
         this.currentChannel = channels.get(0);
-        gui.menuBar.channelMenu.updateChannels();
 
 
-        // Populate Programs List
+
+        // (re)load Programs List
         XmlScheduleParser parser = new XmlScheduleParser(164, LocalDate.now());
-        currentPrograms.populateList(parser.iterator());
+        currentPrograms.load(parser.iterator());
         currentPrograms.prune12Hours();
         currentPrograms.sortTime();
 
@@ -81,9 +79,6 @@ public class MainController {
         }
 
         gui.show();
-
-        //todo this is just a test how to update view. will move in observer pattern
-        gui.menuBar.repaint();
 
     }
 

@@ -1,21 +1,26 @@
 package model;
 
+import controller.Observer;
+import controller.Subject;
+
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Iterator;
+import java.util.*;
 
 /**
  * Created by loge on 2016-12-23.
  */
-public class ProgramListModel extends ArrayList<ProgramModel> {
+public class ProgramListModel extends ArrayList<ProgramModel> implements Subject{
+
+    private ArrayList<Observer> observers;
 
     public ProgramListModel(){
+        observers = new ArrayList<>();
 
     }
 
-    public void populateList(Iterator<ProgramModel> iterator){
+    public void load(Iterator<ProgramModel> iterator){
+
+        this.clear();
         while(iterator.hasNext()){
             add(iterator.next());
         }
@@ -38,4 +43,22 @@ public class ProgramListModel extends ArrayList<ProgramModel> {
     }
 
 
+    @Override
+    public void register(Observer obj) {
+        observers.add(obj);
+    }
+
+    @Override
+    public void unregister(Observer obj) {
+        observers.remove(obj);
+    }
+
+    @Override
+    public void notifyObservers() {
+        if(observers != null){
+            for(Observer observer : observers){
+                observer.update();
+            }
+        }
+    }
 }

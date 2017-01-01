@@ -8,13 +8,20 @@ import javax.swing.*;
  * Created by loge on 2016-12-21.
  */
 public class Gui {
-    public JFrame frame;
+    //public JFrame frame;
+    public SplitPane frame;
     public MenuBar menuBar;
+    public TablePanel tablePanel;
+    public InfoPanel infoPanel;
 
 
     public Gui(String title, ChannelListModel channels){
-         frame = new JFrame(title);
-         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+         //frame = new JFrame(title);
+        tablePanel = new TablePanel();
+        infoPanel = new InfoPanel();
+
+        frame = new SplitPane(title, tablePanel, infoPanel);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
          // construct the parts
          menuBar = new MenuBar(channels);

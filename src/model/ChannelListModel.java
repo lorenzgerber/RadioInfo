@@ -1,48 +1,52 @@
 package model;
 
-import java.time.LocalDateTime;
+import controller.Observer;
+
 import java.util.ArrayList;
 import java.util.Iterator;
+
 
 /**
  * Created by loge on 2016-12-22.
  */
-public class ChannelListModel extends ArrayList<ChannelModel> {
+public class ChannelListModel extends ArrayList<ChannelModel> implements controller.Subject {
+
+    private ArrayList<Observer> observers;
 
     //int channelId;
     String BASE_QUERY_URL = "http://api.sr.se/api/v2/scheduledepisodes";
 
     public ChannelListModel() {
-        //this.channelId = channelId;
-
+        observers = new ArrayList<>();
     }
 
-    public void populateList(Iterator<ChannelModel> iterator){
+    public void loadList(Iterator<ChannelModel> iterator){
+        this.clear();
         while(iterator.hasNext()){
             add(iterator.next());
         }
+        notifyObservers();
     }
 
-    /*
-    public void loadChannelListEntries(){
+    @Override
+    public void register(Observer obj) {
+        observers.add(obj);
+    }
 
-        ArrayList<LocalDateTime> queryDates = new ArrayList<LocalDateTime>();
-        LocalDateTime accessTime = LocalDateTime.now();
-        queryDates.add( accessTime);
-
-        if(accessTime.getDayOfMonth()!=accessTime.plusHours(12).getDayOfMonth()){
-            queryDates.add(accessTime.plusHours(12));
-        }
-
-        if(accessTime.getDayOfMonth()!=accessTime.minusHours(12).getDayOfMonth()){
-            queryDates.add(accessTime.minusHours(12));
-        }
+    @Override
+    public void unregister(Observer obj) {
+        observers.remove(obj);
 
     }
-    */
 
+    @Override
+    public void notifyObservers() {
 
-
-
+        if(observers != null){
+            for(Observer observer : observers){
+                observer.update();
+            }
+        }
+    }
 
 }
