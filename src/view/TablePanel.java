@@ -1,5 +1,8 @@
 package view;
 
+import model.ProgramListModel;
+import model.ProgramTableModel;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -8,7 +11,8 @@ import java.awt.*;
  */
 public class TablePanel extends JPanel {
 
-    public TablePanel(){
+    public TablePanel(ProgramListModel programList){
+        /*
         setLayout( new BorderLayout() );
 
         // Add some buttons
@@ -17,6 +21,13 @@ public class TablePanel extends JPanel {
         add( new JButton( "East" ), BorderLayout.EAST );
         add( new JButton( "West" ), BorderLayout.WEST );
         add( new JButton( "Center" ), BorderLayout.CENTER );
+        */
+
+        JTable table = new JTable(new ProgramTableModel(programList));
+
+        JScrollPane scrollPane = new JScrollPane(table);
+        table.setFillsViewportHeight(true);
+        add(scrollPane);
 
     }
 

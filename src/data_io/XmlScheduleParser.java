@@ -71,6 +71,15 @@ public class XmlScheduleParser implements Iterable<ProgramModel>{
 
                 int programid = Integer.parseInt(eElementProgram.getAttribute("id"));
                 String name = eElementProgram.getAttribute("name");
+
+                // Check if there is a more detailed title tag available
+                Node titleNode = eElementEpisode
+                        .getElementsByTagName("title")
+                        .item(0);
+                if (titleNode != null){
+                    name = titleNode.getTextContent();
+                }
+
                 tempProgram = new ProgramModel(programid, name);
 
                 // parse Description, if available

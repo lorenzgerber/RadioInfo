@@ -1,6 +1,7 @@
 package view;
 
 import model.ChannelListModel;
+import model.ProgramListModel;
 
 import javax.swing.*;
 
@@ -15,9 +16,9 @@ public class Gui {
     public InfoPanel infoPanel;
 
 
-    public Gui(String title, ChannelListModel channels){
+    public Gui(String title, ChannelListModel channels, ProgramListModel programs){
          //frame = new JFrame(title);
-        tablePanel = new TablePanel();
+        tablePanel = new TablePanel(programs);
         infoPanel = new InfoPanel();
 
         frame = new SplitPane(title, tablePanel, infoPanel);

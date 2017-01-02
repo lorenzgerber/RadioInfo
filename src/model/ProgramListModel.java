@@ -1,17 +1,14 @@
 package model;
 
-import controller.Observer;
-import controller.Subject;
-
 import java.time.LocalDateTime;
 import java.util.*;
 
 /**
  * Created by loge on 2016-12-23.
  */
-public class ProgramListModel extends ArrayList<ProgramModel> implements Subject{
+public class ProgramListModel extends ArrayList<ProgramModel> implements ISubject {
 
-    private ArrayList<Observer> observers;
+    private ArrayList<IObserver> observers;
 
     public ProgramListModel(){
         observers = new ArrayList<>();
@@ -44,19 +41,19 @@ public class ProgramListModel extends ArrayList<ProgramModel> implements Subject
 
 
     @Override
-    public void register(Observer obj) {
+    public void register(IObserver obj) {
         observers.add(obj);
     }
 
     @Override
-    public void unregister(Observer obj) {
+    public void unregister(IObserver obj) {
         observers.remove(obj);
     }
 
     @Override
     public void notifyObservers() {
         if(observers != null){
-            for(Observer observer : observers){
+            for(IObserver observer : observers){
                 observer.update();
             }
         }

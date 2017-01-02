@@ -7,13 +7,13 @@ import java.time.LocalDateTime;
  */
 public class ProgramModel {
 
-    int episodeId;
-    int programId;
-    String name;
-    String description;
-    LocalDateTime startTime;
-    LocalDateTime endTime;
-    String imageUrl;
+    private int episodeId;
+    private int programId;
+    private String name;
+    private String description;
+    private LocalDateTime startTime;
+    private LocalDateTime endTime;
+    private String imageUrl;
 
 
     public ProgramModel(int programId, String name){
@@ -35,6 +35,10 @@ public class ProgramModel {
 
     public void setImageUrl(String imageUrl){
         this.imageUrl = imageUrl;
+    }
+
+    public String getName(){
+        return this.name;
     }
 
     public LocalDateTime getStartTime(){

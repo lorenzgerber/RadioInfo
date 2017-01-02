@@ -1,17 +1,16 @@
 package view;
 
-import controller.Subject;
 import model.ChannelListModel;
 import model.ChannelModel;
+import model.IObserver;
 
 import javax.swing.*;
 import java.util.ArrayList;
-import java.util.Observer;
 
 /**
  * Created by loge on 2016-12-21.
  */
-public class ChannelMenu extends JMenu implements controller.Observer {
+public class ChannelMenu extends JMenu implements IObserver {
 
     public ArrayList<JMenuItem> menuItems = new ArrayList<JMenuItem>();
     public ChannelListModel channels;

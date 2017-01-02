@@ -3,6 +3,7 @@ import data_io.XmlChannelParser;
 import data_io.XmlReader;
 import model.ChannelListModel;
 import model.ChannelModel;
+import model.ProgramListModel;
 import view.Gui;
 
 import javax.swing.*;
@@ -23,13 +24,10 @@ public class RadioInfoMain {
             public void run() {
 
                 ChannelListModel channels = new ChannelListModel();
-                /*
+                ProgramListModel programs = new ProgramListModel();
 
-                */
-
-
-                Gui gui = new Gui("Radio Info", channels);
-                MainController main = new MainController(gui, channels);
+                Gui gui = new Gui("Radio Info", channels, programs);
+                MainController main = new MainController(gui, channels, programs);
             }
         });
 
