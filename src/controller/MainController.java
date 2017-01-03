@@ -62,6 +62,12 @@ public class MainController {
 
         gui.show();
 
+        (new TimedProgramUpdater(currentChannel,
+                currentPrograms,
+                gui.tablePanel)).execute();
+
+
+
     }
 
 

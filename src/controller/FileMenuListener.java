@@ -2,6 +2,7 @@ package controller;
 
 import data_io.XmlScheduleParser;
 import model.ChannelModel;
+import view.ProgramBackgroundUpdater;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -12,11 +13,9 @@ import java.time.LocalDate;
  */
 public class FileMenuListener implements ActionListener {
 
-    ChannelModel channel;
     MainController mainController;
 
     public FileMenuListener(ChannelModel channel, MainController mainController) {
-        this.channel = channel;
         this.mainController = mainController;
 
     }
@@ -28,7 +27,7 @@ public class FileMenuListener implements ActionListener {
         }
 
         if(e.getActionCommand().equals("Reload")){
-            mainController.currentPrograms.load(new XmlScheduleParser(channel.getId(), LocalDate.now()).iterator());
+            (new ProgramBackgroundUpdater(mainController.currentChannel, mainController.currentPrograms, mainController.gui.tablePanel)).execute();
         }
 
     }
