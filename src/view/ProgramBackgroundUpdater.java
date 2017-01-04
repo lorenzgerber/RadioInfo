@@ -1,5 +1,6 @@
 package view;
 
+import controller.MainController;
 import data_io.XmlScheduleParser;
 import model.ChannelModel;
 import model.ProgramListModel;
@@ -15,17 +16,20 @@ public class ProgramBackgroundUpdater extends SwingWorker<ProgramListModel, Obje
     TablePanel tablePanel;
     ChannelModel channel;
     ProgramListModel programs;
+    MainController main;
 
 
-    public ProgramBackgroundUpdater(ChannelModel channel, ProgramListModel programs, TablePanel tablePanel){
+    public ProgramBackgroundUpdater(ChannelModel channel, ProgramListModel programs, TablePanel tablePanel, MainController main){
         this.tablePanel = tablePanel;
         this.channel = channel;
         this.programs = programs;
+        this.main = main;
 
     }
 
     @Override
     public ProgramListModel doInBackground() {
+
 
         XmlScheduleParser parser = new XmlScheduleParser(channel.getId(), LocalDate.now());
         programs.load(parser.iterator());
@@ -40,6 +44,7 @@ public class ProgramBackgroundUpdater extends SwingWorker<ProgramListModel, Obje
             tablePanel.repaint();
         } catch (Exception ignore) {
         }
+
     }
 
 

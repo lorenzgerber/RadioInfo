@@ -21,6 +21,7 @@ public class MainController {
     ChannelModel currentChannel;
     ProgramListModel currentPrograms;
     FileMenuListener fileMenuListener;
+    public TimedProgramUpdater updater;
     Gui gui;
 
     public MainController(Gui gui, ChannelListModel channels, ProgramListModel programs){
@@ -62,15 +63,8 @@ public class MainController {
 
         gui.show();
 
-        (new TimedProgramUpdater(currentChannel,
-                currentPrograms,
-                gui.tablePanel)).execute();
-
-
+        updater = new TimedProgramUpdater(currentChannel, currentPrograms, gui.tablePanel, this);
+        updater.execute();
 
     }
-
-
-
-
 }

@@ -3,6 +3,7 @@ package controller;
 import data_io.XmlScheduleParser;
 import model.ChannelModel;
 import view.ProgramBackgroundUpdater;
+import view.TimedProgramUpdater;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -32,7 +33,9 @@ public class ChannelMenuListener implements ActionListener {
         if(e.getActionCommand().equals(mainController.currentChannel.getName())) {
             (new ProgramBackgroundUpdater(mainController.currentChannel,
                     mainController.currentPrograms,
-                    mainController.gui.tablePanel)).execute();
+                    mainController.gui.tablePanel,
+                    mainController)).execute();
+
         }
     }
 

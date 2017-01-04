@@ -3,6 +3,7 @@ package controller;
 import data_io.XmlScheduleParser;
 import model.ChannelModel;
 import view.ProgramBackgroundUpdater;
+import view.TimedProgramUpdater;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -23,11 +24,16 @@ public class FileMenuListener implements ActionListener {
     @Override
     public void actionPerformed(final ActionEvent e){
         if(e.getActionCommand().equals("Quit")) {
+            mainController.updater.cancel(true);
             System.exit(0);
         }
 
         if(e.getActionCommand().equals("Reload")){
-            (new ProgramBackgroundUpdater(mainController.currentChannel, mainController.currentPrograms, mainController.gui.tablePanel)).execute();
+
+            (new ProgramBackgroundUpdater(mainController.currentChannel,
+                    mainController.currentPrograms,
+                    mainController.gui.tablePanel,
+                    mainController)).execute();
         }
 
     }

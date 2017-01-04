@@ -1,6 +1,7 @@
 package view;
 
 
+import controller.MainController;
 import model.ChannelModel;
 import model.ProgramListModel;
 
@@ -16,12 +17,14 @@ public class TimedProgramUpdater extends SwingWorker<Void, Object>{
         TablePanel tablePanel;
         ChannelModel channel;
         ProgramListModel programs;
+        MainController main;
 
 
-        public TimedProgramUpdater(ChannelModel channel, ProgramListModel programs, TablePanel tablePanel){
+        public TimedProgramUpdater(ChannelModel channel, ProgramListModel programs, TablePanel tablePanel, MainController main){
             this.tablePanel = tablePanel;
             this.channel = channel;
             this.programs = programs;
+            this.main = main;
 
         }
 
@@ -34,9 +37,9 @@ public class TimedProgramUpdater extends SwingWorker<Void, Object>{
                 } catch (InterruptedException ex) {
                     System.out.println("Background interrupted");
                 }
-                System.out.println("Background running");
+                System.out.println("Background running " + counter);
                 counter++;
-                if(counter == 3600) {
+                if(counter == 10) {
                     break;
                 }
 
@@ -48,9 +51,15 @@ public class TimedProgramUpdater extends SwingWorker<Void, Object>{
         @Override
         protected void done() {
             try {
-                (new ProgramBackgroundUpdater(channel, programs, tablePanel)).execute();
+                (new ProgramBackgroundUpdater(channel, programs, tablePanel, main)).execute();
+                main.updater.cancel(true);
+                main.updater = new TimedProgramUpdater(channel, programs, tablePanel, main);
+                main.updater.execute();
             } catch (Exception ignore) {
+
             }
+
+
         }
 
 }
