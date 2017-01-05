@@ -51,7 +51,7 @@ public class TimedProgramUpdater extends SwingWorker<Void, Object>{
         @Override
         protected void done() {
             try {
-                (new ProgramBackgroundUpdater(channel, programs, tablePanel, main)).execute();
+                (new ProgramBackgroundUpdater(main.getCurrentChannel(), programs, tablePanel, main)).execute();
                 main.updater.cancel(true);
                 main.updater = new TimedProgramUpdater(channel, programs, tablePanel, main);
                 main.updater.execute();

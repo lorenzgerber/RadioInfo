@@ -17,12 +17,12 @@ import java.time.LocalDate;
  */
 public class MainController {
 
-    ChannelListModel channels;
-    ChannelModel currentChannel;
-    ProgramListModel currentPrograms;
-    FileMenuListener fileMenuListener;
+    private ChannelListModel channels;
+    private ChannelModel currentChannel;
+    private ProgramListModel currentPrograms;
+    private FileMenuListener fileMenuListener;
     public TimedProgramUpdater updater;
-    Gui gui;
+    private Gui gui;
 
     public MainController(Gui gui, ChannelListModel channels, ProgramListModel programs){
 
@@ -67,4 +67,25 @@ public class MainController {
         updater.execute();
 
     }
+
+    public ChannelModel getCurrentChannel(){
+        return currentChannel;
+    }
+
+    public void setCurrentChannel(ChannelModel currentChannel){
+        this.currentChannel = currentChannel;
+    }
+
+    public ChannelListModel getChannels(){
+        return channels;
+    }
+
+    public ProgramListModel getCurrentPrograms(){
+        return currentPrograms;
+    }
+
+    public Gui getGui(){
+        return gui;
+    }
+
 }

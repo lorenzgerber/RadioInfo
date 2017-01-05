@@ -30,9 +30,9 @@ public class FileMenuListener implements ActionListener {
 
         if(e.getActionCommand().equals("Reload")){
 
-            (new ProgramBackgroundUpdater(mainController.currentChannel,
-                    mainController.currentPrograms,
-                    mainController.gui.tablePanel,
+            (new ProgramBackgroundUpdater(mainController.getCurrentChannel(),
+                    mainController.getCurrentPrograms(),
+                    mainController.getGui().tablePanel,
                     mainController)).execute();
         }
 

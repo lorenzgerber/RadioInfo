@@ -11,16 +11,19 @@ import java.awt.*;
  */
 public class TablePanel extends JPanel {
 
+    JTable table;
+    JScrollPane scrollPane;
+
     public TablePanel(ProgramListModel programList){
         String[] columnNames = {"Program", "Start", "End"};
 
-        JTable table = new JTable(new ProgramTableModel(programList));
+        table = new JTable(new ProgramTableModel(programList));
 
         for(int i = 0; i < 3; i++){
             table.getColumnModel().getColumn(i).setHeaderValue(columnNames[i]);
         }
 
-        JScrollPane scrollPane = new JScrollPane(table);
+        scrollPane = new JScrollPane(table);
         scrollPane.setViewportView(table);
         table.setFillsViewportHeight(true);
         add(scrollPane);

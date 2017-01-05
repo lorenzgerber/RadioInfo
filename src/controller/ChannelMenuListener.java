@@ -24,16 +24,16 @@ public class ChannelMenuListener implements ActionListener {
     @Override
     public void actionPerformed(final ActionEvent e){
         int channelIndex;
-        for(channelIndex = 0; channelIndex < mainController.channels.size(); channelIndex++ ){
-            if(mainController.channels.get(channelIndex).getName().equals(e.getActionCommand())){
-                mainController.currentChannel = mainController.channels.get(channelIndex);
+        for(channelIndex = 0; channelIndex < mainController.getChannels().size(); channelIndex++ ){
+            if(mainController.getChannels().get(channelIndex).getName().equals(e.getActionCommand())){
+                mainController.setCurrentChannel(mainController.getChannels().get(channelIndex));
             }
         }
 
-        if(e.getActionCommand().equals(mainController.currentChannel.getName())) {
-            (new ProgramBackgroundUpdater(mainController.currentChannel,
-                    mainController.currentPrograms,
-                    mainController.gui.tablePanel,
+        if(e.getActionCommand().equals(mainController.getCurrentChannel().getName())) {
+            (new ProgramBackgroundUpdater(mainController.getCurrentChannel(),
+                    mainController.getCurrentPrograms(),
+                    mainController.getGui().tablePanel,
                     mainController)).execute();
 
         }
