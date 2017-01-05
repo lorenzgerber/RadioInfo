@@ -41,8 +41,7 @@ public class ProgramBackgroundUpdater extends SwingWorker<ProgramListModel, Obje
     @Override
     protected void done() {
         try {
-            tablePanel.repaint();
-            main.getGui().tablePanel.table.revalidate();
+            main.getGui().tablePanel.tableModel.fireTableDataChanged();
         } catch (Exception ignore) {
         }
 

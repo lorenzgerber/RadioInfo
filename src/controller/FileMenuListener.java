@@ -1,13 +1,10 @@
 package controller;
 
-import data_io.XmlScheduleParser;
 import model.ChannelModel;
 import view.ProgramBackgroundUpdater;
-import view.TimedProgramUpdater;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.time.LocalDate;
 
 /**
  * Created by loge on 2016-12-22.
@@ -31,7 +28,7 @@ public class FileMenuListener implements ActionListener {
         if(e.getActionCommand().equals("Reload")){
 
             (new ProgramBackgroundUpdater(mainController.getCurrentChannel(),
-                    mainController.getCurrentPrograms(),
+                    mainController.getPrograms(),
                     mainController.getGui().tablePanel,
                     mainController)).execute();
         }

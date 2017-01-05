@@ -4,6 +4,7 @@ import data_io.XmlReader;
 import model.ChannelListModel;
 import model.ChannelModel;
 import model.ProgramListModel;
+import model.ProgramModel;
 import view.Gui;
 
 import javax.swing.*;

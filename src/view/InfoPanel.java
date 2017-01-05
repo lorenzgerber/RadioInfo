@@ -9,11 +9,10 @@ import java.awt.*;
 public class InfoPanel extends JPanel {
 
     public InfoPanel(){
-        setLayout( new FlowLayout() );
+        this.setLayout( new BoxLayout(this, BoxLayout.Y_AXIS ));
 
-        add( new JButton( "Button 1" ) );
-        add( new JButton( "Button 2" ) );
-        add( new JButton( "Button 3" ) );
+        add(new TextArea("bla bla bla"));
+
     }
 
 }

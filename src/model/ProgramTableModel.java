@@ -13,6 +13,10 @@ public class ProgramTableModel extends AbstractTableModel {
         this.programList = programList;
     }
 
+    public void setDataVector(Object[][] dataVector){
+
+    };
+
     @Override
     public int getRowCount() {
         return programList.size();

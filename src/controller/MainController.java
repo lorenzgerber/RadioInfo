@@ -5,6 +5,7 @@ import data_io.XmlScheduleParser;
 import model.ChannelListModel;
 import model.ChannelModel;
 import model.ProgramListModel;
+import model.ProgramModel;
 import view.*;
 
 import javax.swing.*;
@@ -19,7 +20,8 @@ public class MainController {
 
     private ChannelListModel channels;
     private ChannelModel currentChannel;
-    private ProgramListModel currentPrograms;
+    private ProgramListModel programs;
+    private ProgramModel currentProgram;
     private FileMenuListener fileMenuListener;
     public TimedProgramUpdater updater;
     private Gui gui;
@@ -28,7 +30,7 @@ public class MainController {
 
         this.gui = gui;
         this.channels = channels;
-        this.currentPrograms = programs;
+        this.programs = programs;
 
 
 
@@ -40,13 +42,15 @@ public class MainController {
         this.currentChannel = channels.get(0);
         fileMenuListener = new FileMenuListener(this.currentChannel, this);
 
+        //this.currentProgram = programs.get(0);
+
 
 
         // (re)load Programs List
         XmlScheduleParser parser = new XmlScheduleParser(this.currentChannel.getId(), LocalDate.now());
-        currentPrograms.load(parser.iterator());
-        currentPrograms.prune12Hours();
-        currentPrograms.sortTime();
+        this.programs.load(parser.iterator());
+        this.programs.prune12Hours();
+        this.programs.sortTime();
 
 
         // add listeners in file menu
@@ -63,7 +67,7 @@ public class MainController {
 
         gui.show();
 
-        updater = new TimedProgramUpdater(currentChannel, currentPrograms, gui.tablePanel, this);
+        updater = new TimedProgramUpdater(currentChannel, this.programs, gui.tablePanel, this);
         updater.execute();
 
     }
@@ -80,8 +84,8 @@ public class MainController {
         return channels;
     }
 
-    public ProgramListModel getCurrentPrograms(){
-        return currentPrograms;
+    public ProgramListModel getPrograms(){
+        return programs;
     }
 
     public Gui getGui(){
