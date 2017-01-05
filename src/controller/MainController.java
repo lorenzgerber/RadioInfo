@@ -32,8 +32,6 @@ public class MainController {
         this.channels = channels;
         this.programs = programs;
 
-
-
         // (re)load Channels List
         XmlChannelParser channelGetter = new XmlChannelParser(100);
         this.channels.loadList(channelGetter.iterator());
@@ -41,9 +39,6 @@ public class MainController {
         // initially set current channel
         this.currentChannel = channels.get(0);
         fileMenuListener = new FileMenuListener(this.currentChannel, this);
-
-        //this.currentProgram = programs.get(0);
-
 
 
         // (re)load Programs List
@@ -64,6 +59,11 @@ public class MainController {
             tempListener = new ChannelMenuListener(channels.get(channel_no), this);
             gui.menuBar.channelMenu.menuItems.get(channel_no).addActionListener(tempListener);
         }
+
+        // add click listener in Table
+        ProgramSelectionListener programListener;
+        programListener = new ProgramSelectionListener(gui.tablePanel.getTable(), this);
+        gui.tablePanel.addSelectionListener(programListener);
 
         gui.show();
 

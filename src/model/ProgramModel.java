@@ -49,6 +49,7 @@ public class ProgramModel {
         return this.endTime;
     }
 
+    public String getDescription() { return this.description; }
 
 
 
