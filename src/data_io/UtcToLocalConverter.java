@@ -23,12 +23,21 @@ import java.util.Date;
 import static java.time.format.DateTimeFormatter.ISO_INSTANT;
 
 /**
- * Created by loge on 2016-12-23.
+ * UtcToLocalConverter
+ * This class parses a string that contains
+ * dateTime in UTC and converts it to localtime
  */
 public class UtcToLocalConverter {
 
     LocalDateTime outDateTime;
 
+    /**
+     * UtcToLocalConverter
+     * Constructor method that takes a string which has to
+     * contain a datetime in UTC which is then parsed, converted
+     * and stored in the instance.
+     * @param dateTime
+     */
     public UtcToLocalConverter(String dateTime){
 
         DateTimeFormatter formatter = DateTimeFormatter.ISO_INSTANT.withZone(ZoneId.of("GMT"));
@@ -37,6 +46,11 @@ public class UtcToLocalConverter {
 
     }
 
+    /**
+     * getDate()
+     * Property accessor method.
+     * @return LocaldateTime the parsed and converted localtime
+     */
     public LocalDateTime getDate(){
         return outDateTime;
     }

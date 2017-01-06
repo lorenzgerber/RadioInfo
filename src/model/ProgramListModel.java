@@ -18,7 +18,12 @@ import java.time.LocalDateTime;
 import java.util.*;
 
 /**
- * Created by loge on 2016-12-23.
+ * ProgramListModel Class
+ * This class provides the container for
+ * ProgramModel objects. it contains some helper
+ * methods to obtain a 12h +/- collection of
+ * ProgramModel objects from the XmlParser.
+ * The class implements the ISubject Interface
  */
 public class ProgramListModel extends ArrayList<ProgramModel> implements ISubject {
 

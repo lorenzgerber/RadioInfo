@@ -15,11 +15,17 @@
 package model;
 
 /**
- * Created by lgerber on 2017-01-01.
+ * IObserver interface
+ * This interface is used for the
+ * Observer-observable pattern.
  */
 public interface IObserver {
 
-    //method to update the observer, used by subject
+    /**
+     * update
+     * method to initiate update on the
+     * observer.
+     */
     public void update();
 
 }

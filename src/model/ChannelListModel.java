@@ -19,19 +19,31 @@ import java.util.Iterator;
 
 
 /**
- * Created by loge on 2016-12-22.
+ * ChannelListModel Class
+ * This class provides the Data container for the
+ * ChannelModel objects. It extends the ArrayList and
+ * implements the ISubject interface to function
+ * as observable.
  */
 public class ChannelListModel extends ArrayList<ChannelModel> implements ISubject {
 
     private ArrayList<IObserver> observers;
 
-    //int channelId;
-    String BASE_QUERY_URL = "http://api.sr.se/api/v2/scheduledepisodes";
-
+    /**
+     * ChannelListModel
+     * Constructor method
+     */
     public ChannelListModel() {
         observers = new ArrayList<>();
     }
 
+    /**
+     * loadList
+     * Method to fill the ChannelListModel
+     * with ChannelModels obtained by an iterator
+     * from the XmlChannelParser
+     * @param iterator
+     */
     public void loadList(Iterator<ChannelModel> iterator){
         this.clear();
         while(iterator.hasNext()){
@@ -40,17 +52,33 @@ public class ChannelListModel extends ArrayList<ChannelModel> implements ISubjec
         notifyObservers();
     }
 
+    /**
+     * register
+     * method to register Observers
+     * of the current instance
+     * @param obj
+     */
     @Override
     public void register(IObserver obj) {
         observers.add(obj);
     }
 
+    /**
+     * unregister
+     * method to unregister Observers
+     * from the current instance
+     * @param obj
+     */
     @Override
     public void unregister(IObserver obj) {
         observers.remove(obj);
-
     }
 
+    /**
+     * notifyObservers
+     * notification method that notifies
+     * the registered observers.
+     */
     @Override
     public void notifyObservers() {
 

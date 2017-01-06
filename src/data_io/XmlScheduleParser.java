@@ -28,7 +28,10 @@ import java.util.Iterator;
 import static java.time.format.DateTimeFormatter.ISO_LOCAL_DATE;
 
 /**
- * Created by loge on 2016-12-23.
+ * XmlScheduleParser Class
+ * This class parses the program obtained by a
+ * XmlReader instance from the 'Sveriges Radio' web
+ * API V2.
  */
 public class XmlScheduleParser implements Iterable<ProgramModel>{
 
@@ -36,6 +39,12 @@ public class XmlScheduleParser implements Iterable<ProgramModel>{
     ProgramListModel programList = new ProgramListModel();
 
 
+    /**
+     * XmlScheduleParser
+     * Constructor method
+     * @param channelId int channel Id from SR's web API V2
+     * @param localDate localDate object, date of program to be loaded
+     */
     public XmlScheduleParser(int channelId, LocalDate localDate){
 
 
@@ -45,24 +54,36 @@ public class XmlScheduleParser implements Iterable<ProgramModel>{
             String SCHEDULE_URL = "http://api.sr.se/api/v2/scheduledepisodes?channelid=";
             StringBuilder urlBuilder = new StringBuilder(SCHEDULE_URL);
             urlBuilder.append(channelId);
-            // add date as string
+            /* add date as string */
             String formattedString = date.format(ISO_LOCAL_DATE);
             urlBuilder.append("&date=" + formattedString);
 
-            // choose large size to include all programs
+            /* choose large size to include all programs */
             urlBuilder.append("&size=1000");
 
             this.ScheduleParser(urlBuilder.toString());
         }
     }
 
-
+    /**
+     * XmlScheduleParser
+     * Alternative constructor method used for
+     * unit testing.
+     * @param stringUrl
+     */
     public XmlScheduleParser(String stringUrl){
 
         this.ScheduleParser(stringUrl);
 
     }
 
+    /**
+     * ScheduleParser
+     * Actual parse method that will
+     * fill a ProgramListModel with ProgramModel
+     * objects.
+     * @param stringUrl
+     */
     private void ScheduleParser(String stringUrl){
 
         XmlReader reader = new XmlReader(stringUrl);
@@ -86,7 +107,7 @@ public class XmlScheduleParser implements Iterable<ProgramModel>{
                 int programid = Integer.parseInt(eElementProgram.getAttribute("id"));
                 String name = eElementProgram.getAttribute("name");
 
-                // Check if there is a more detailed title tag available
+                /* Check if there is a more detailed title tag available */
                 Node titleNode = eElementEpisode
                         .getElementsByTagName("title")
                         .item(0);
@@ -96,7 +117,7 @@ public class XmlScheduleParser implements Iterable<ProgramModel>{
 
                 tempProgram = new ProgramModel(programid, name);
 
-                // parse Description, if available
+                /* parse Description, if available */
                 Node descriptionNode = eElementEpisode
                         .getElementsByTagName("description")
                         .item(0);
@@ -104,7 +125,7 @@ public class XmlScheduleParser implements Iterable<ProgramModel>{
                     tempProgram.setDescription(descriptionNode.getTextContent());
                 }
 
-                // parse image url, if available
+                /* parse image url, if available */
                 Node imageUrlNode = eElementEpisode
                         .getElementsByTagName("imageurl")
                         .item(0);
@@ -112,7 +133,7 @@ public class XmlScheduleParser implements Iterable<ProgramModel>{
                     tempProgram.setImageUrl(imageUrlNode.getTextContent());
                 }
 
-                // parse start time
+                /* parse start time */
                 LocalDateTime start = new UtcToLocalConverter(
                         eElementEpisode
                                 .getElementsByTagName("starttimeutc")
@@ -120,7 +141,7 @@ public class XmlScheduleParser implements Iterable<ProgramModel>{
                                 .getTextContent())
                         .getDate();
 
-                // parse end time
+                /* parse end time */
                 LocalDateTime end = new UtcToLocalConverter(
                         eElementEpisode
                                 .getElementsByTagName("endtimeutc")
@@ -141,6 +162,16 @@ public class XmlScheduleParser implements Iterable<ProgramModel>{
         return programList.iterator();
     }
 
+    /**
+     * threeDateRange
+     * Helper method that returns an ArrayList with a range
+     * of three LocalDate objects from one date before to
+     * one day after the input argument middleDate. This is used
+     * to guarantee a complete set of programs for 12 hours before and
+     * after the current time.
+     * @param middleDate LocalDate middelDate
+     * @return ArrayList that contains three LocalDate objects
+     */
     private ArrayList<LocalDate> threeDateRange(LocalDate middleDate){
         ArrayList<LocalDate> threeDateRange = new ArrayList<>();
         LocalDate dateToday = middleDate;

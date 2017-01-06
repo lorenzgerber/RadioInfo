@@ -24,12 +24,15 @@ import java.net.URL;
 import java.util.Iterator;
 
 /**
- * Created by loge on 2016-12-22.
+ * XmlChannelParser Class
+ * This class is used to parse the channel list from
+ * "Sveriges Radio" web API v2 obtained by a XmlReader instance.
  */
 public class XmlChannelParser implements Iterable<ChannelModel>{
 
-    NodeList nodeList;
-    ChannelListModel channelList;
+    private NodeList nodeList;
+    private ChannelListModel channelList;
+    private String CHANNEL_URL = "http://api.sr.se/api/v2/channels";
 
     /**
      * XmlChannelParser
@@ -38,7 +41,6 @@ public class XmlChannelParser implements Iterable<ChannelModel>{
      * @param numberChannels int maximum number of channels to read
      */
     public XmlChannelParser(int numberChannels){
-        String CHANNEL_URL = "http://api.sr.se/api/v2/channels";
         StringBuilder urlBuilder = new StringBuilder(CHANNEL_URL);
         urlBuilder.append("/?size=" + numberChannels);
         this.ChannelParser(urlBuilder.toString());
@@ -55,8 +57,8 @@ public class XmlChannelParser implements Iterable<ChannelModel>{
 
     /**
      * ChannelParser
-     * Actual parser method for Sveriges Radio
-     * API xml format Version 2
+     * Actual parser method for 'Sveriges Radio'
+     * web API xml format 2
      * @param channelUrl string with the url to the web API
      *                   or a respective resource
      */
@@ -87,9 +89,13 @@ public class XmlChannelParser implements Iterable<ChannelModel>{
 
     }
 
+    /**
+     * Iterator method
+     * @return Iterator that iterates over ChannlListModel
+     * of obtained channels.
+     */
     public Iterator<ChannelModel> iterator() {
         return channelList.iterator();
     }
-
 
 }

@@ -21,15 +21,25 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
-import java.net.URL;
+
 
 /**
- * Created by loge on 2016-12-20.
+ * XmlReader Class
+ * This class provides the DOM document read from an URL that provides
+ * XML data. It is used in conjunction with the Channel/-
+ * and the ScheduleParser.
  */
 public class XmlReader {
 
     Document doc = null;
 
+    /**
+     * XmlReader
+     * Constructor method that sets up the XML DOM parser
+     * with a URL and provides access to the parsed DOM
+     * document.
+     * @param stringUrl
+     */
     public XmlReader(String stringUrl){
 
         try {

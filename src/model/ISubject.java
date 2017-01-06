@@ -15,16 +15,32 @@
 package model;
 
 /**
- * Created by lgerber on 2017-01-01.
+ * ISubject interface
+ * This interface is used to implement
+ * the observer-observable pattern.
+ * It is implemented by the observable.
  */
 public interface ISubject {
 
-    //methods to register and unregister observers
+    /**
+     * register
+     * Method used to register observers
+     * on the observable.
+     */
     public void register(IObserver obj);
 
+    /**
+     * unregister
+     * Method used to unregister obervers
+     * from the observable.
+     * @param obj
+     */
     public void unregister(IObserver obj);
 
-    //method to notify observers of change
+    /**
+     * notify
+     * method to notify the observers
+     */
     public void notifyObservers();
 
 }
