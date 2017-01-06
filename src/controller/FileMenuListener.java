@@ -37,6 +37,11 @@ public class FileMenuListener implements ActionListener {
 
     }
 
+    /**
+     * {@inheritDoc}
+     * This method will start a ProgramBackgroundUpdater
+     * @param e
+     */
     @Override
     public void actionPerformed(final ActionEvent e){
         if(e.getActionCommand().equals("Quit")) {

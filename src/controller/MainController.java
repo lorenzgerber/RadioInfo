@@ -27,7 +27,15 @@ import java.time.LocalDate;
 
 
 /**
- * Created by loge on 2016-12-22.
+ * MainController Class
+ * According to it's name, this class
+ * holds together the application, hosting the
+ * main data containers such as the channel list
+ * and the program list. The MainController is
+ * also in charge of setting up auxiliary
+ * services such as menu listeners, initial loading
+ * of data etc. Last, it starts the timed background
+ * updater routine.
  */
 public class MainController {
 

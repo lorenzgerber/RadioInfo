@@ -39,6 +39,11 @@ public class ChannelMenuListener implements ActionListener {
 
     }
 
+    /**
+     * {@inheritDoc}
+     * This method will start a ProgramBackgroundUpdater
+     * @param e
+     */
     @Override
     public void actionPerformed(final ActionEvent e){
         int channelIndex;
