@@ -49,41 +49,56 @@ public class TimedProgramUpdater extends SwingWorker<Void, Object>{
      * the execute method.
      * @param main MainController, gives access to all needed instances
      */
-        public TimedProgramUpdater(MainController main){
-            this.main = main;
 
-        }
+    public TimedProgramUpdater(MainController main){
+
+        this.main = main;
+
+    }
 
 
-        @Override
-        public Void doInBackground() {
-            int counter = 0;
-            while(!isCancelled()) {
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException ex) {
-                    System.out.println("Background Updater interrupted");
-                }
-                counter++;
-                if(counter == BACKGROUND_WAIT_SECONDS) {
-                    break;
-                }
-
-            }
-
-            return null;
-        }
-
-        @Override
-        protected void done() {
+    /**
+     * {@inheritDoc}
+     * This method runs in the background as separate thread.
+     * Here it is used as a timer with the granularity of a
+     * second as time unit.
+     * @return
+     */
+    @Override
+    public Void doInBackground() {
+        int counter = 0;
+        while(!isCancelled()) {
             try {
-                (new ProgramBackgroundUpdater(main.getCurrentChannel(), programs, tablePanel, main)).execute();
-                main.timedUpdater.cancel(true);
-                main.timedUpdater = new TimedProgramUpdater(main);
-                main.timedUpdater.execute();
-            } catch (Exception ignore) {
-
+                Thread.sleep(1000);
+            } catch (InterruptedException ex) {
+                System.out.println("Background Updater interrupted");
             }
+            counter++;
+            if(counter == BACKGROUND_WAIT_SECONDS) {
+                break;
+            }
+
         }
+
+        return null;
+    }
+
+    /**
+     * {@inheritDoc}
+     * This method runs after the above timer thread quits. It
+     * calls the actual updater and restarts the background
+     * timer in a new thread.
+     */
+    @Override
+    protected void done() {
+        try {
+            (new ProgramBackgroundUpdater(main.getCurrentChannel(), programs, tablePanel, main)).execute();
+            main.timedUpdater.cancel(true);
+            main.timedUpdater = new TimedProgramUpdater(main);
+            main.timedUpdater.execute();
+        } catch (Exception ignore) {
+
+        }
+    }
 
 }

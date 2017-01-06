@@ -14,7 +14,6 @@
  */
 package controller;
 
-import controller.MainController;
 import data_io.XmlScheduleParser;
 import model.ChannelModel;
 import model.ProgramListModel;
@@ -24,7 +23,11 @@ import javax.swing.*;
 import java.time.LocalDate;
 
 /**
- * Created by loge on 2017-01-03.
+ * ProgramBackgroundUpdater Class
+ * This class extends SwingWorker class and is used
+ * to update the ProgramListModel. A reference to the
+ * ProgramListModel is expected to be stored in the main
+ * controller.
  */
 public class ProgramBackgroundUpdater extends SwingWorker<ProgramListModel, Object> {
 
@@ -34,6 +37,14 @@ public class ProgramBackgroundUpdater extends SwingWorker<ProgramListModel, Obje
     MainController main;
 
 
+    /**
+     * ProgramBackgroundUpdater
+     * Constructor method that assigns all arguments.
+     * @param channel
+     * @param programs
+     * @param tablePanel
+     * @param main
+     */
     public ProgramBackgroundUpdater(ChannelModel channel, ProgramListModel programs, TablePanel tablePanel, MainController main){
         this.tablePanel = tablePanel;
         this.channel = channel;
@@ -42,9 +53,16 @@ public class ProgramBackgroundUpdater extends SwingWorker<ProgramListModel, Obje
 
     }
 
+    /**
+     * {@inheritDoc}
+     * The doInBackground method contains the work
+     * to be done in a separate thread. This includes
+     * here to obtain the programs for the current data
+     * using an XML parser and some data prep.
+     * @return ProgramListModel
+     */
     @Override
     public ProgramListModel doInBackground() {
-
 
         XmlScheduleParser parser = new XmlScheduleParser(channel.getId(), LocalDate.now());
         programs.load(parser.iterator());
@@ -53,6 +71,11 @@ public class ProgramBackgroundUpdater extends SwingWorker<ProgramListModel, Obje
         return programs;
     }
 
+    /**
+     * {@inheritDoc}
+     * Method executed after the background job is finshed.
+     * Here a TableDataChanged event is fired
+     */
     @Override
     protected void done() {
         try {
