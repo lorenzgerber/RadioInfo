@@ -5,7 +5,6 @@ import data_io.XmlScheduleParser;
 import model.ChannelListModel;
 import model.ChannelModel;
 import model.ProgramListModel;
-import model.ProgramModel;
 import view.*;
 
 import javax.swing.*;
@@ -21,7 +20,6 @@ public class MainController {
     private ChannelListModel channels;
     private ChannelModel currentChannel;
     private ProgramListModel programs;
-    private ProgramModel currentProgram;
     private FileMenuListener fileMenuListener;
     public TimedProgramUpdater updater;
     private Gui gui;

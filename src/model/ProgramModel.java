@@ -51,7 +51,7 @@ public class ProgramModel {
 
     public String getDescription() { return this.description; }
 
-
+    public String getImageUrl() { return this.imageUrl; }
 
 
 }

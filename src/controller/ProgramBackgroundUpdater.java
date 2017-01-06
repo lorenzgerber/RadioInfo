@@ -1,9 +1,10 @@
-package view;
+package controller;
 
 import controller.MainController;
 import data_io.XmlScheduleParser;
 import model.ChannelModel;
 import model.ProgramListModel;
+import view.TablePanel;
 
 import javax.swing.*;
 import java.time.LocalDate;

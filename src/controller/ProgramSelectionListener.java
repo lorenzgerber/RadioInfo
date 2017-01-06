@@ -21,14 +21,18 @@ public class ProgramSelectionListener implements ListSelectionListener {
     @Override
     public void valueChanged(ListSelectionEvent e) {
         if (! e.getValueIsAdjusting() ){
-            String selectedData = null;
+            String description = null;
+            String stringUrl = null;
             int selectedRow = table.getSelectedRow();
-            selectedData = main.getPrograms().get(selectedRow).getDescription();
-            main.getGui().infoPanel.setDescription(selectedData);
-            //main.getPrograms().get(selectedRow).getDescription();
+            description = main.getPrograms().get(selectedRow).getDescription();
+            if (main.getPrograms().get(selectedRow).getImageUrl() == null){
+                stringUrl = "";
+            } else {
+                stringUrl =  main.getPrograms().get(selectedRow).getImageUrl();
+            }
 
-            //System.out.println("Selected: " + selectedData);
-
+            main.getGui().programDescriptionPanel.setDescription(description);
+            main.getGui().programLabelPanel.setProgramLabel(stringUrl);
         }
     }
 }

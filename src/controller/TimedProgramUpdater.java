@@ -1,9 +1,9 @@
-package view;
+package controller;
 
 
-import controller.MainController;
 import model.ChannelModel;
 import model.ProgramListModel;
+import view.TablePanel;
 
 import javax.swing.*;
 
@@ -35,11 +35,10 @@ public class TimedProgramUpdater extends SwingWorker<Void, Object>{
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException ex) {
-                    System.out.println("Background interrupted");
+                    System.out.println("Background Updater interrupted");
                 }
-                System.out.println("Background running " + counter);
                 counter++;
-                if(counter == 10) {
+                if(counter == 3600) {
                     break;
                 }
 
@@ -58,8 +57,6 @@ public class TimedProgramUpdater extends SwingWorker<Void, Object>{
             } catch (Exception ignore) {
 
             }
-
-
         }
 
 }

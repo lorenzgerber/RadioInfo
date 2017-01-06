@@ -1,7 +1,6 @@
 package controller;
 
 import model.ChannelModel;
-import view.ProgramBackgroundUpdater;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
