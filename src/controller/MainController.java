@@ -1,3 +1,17 @@
+/*
+ * MainController
+ *
+ * RadioInfo Project,
+ * Coursework 5DV135 Application Development in Java
+ * at Umea University, December, January 2016/2017
+ *
+ * Lorenz Gerber
+ *
+ * Version 0.1
+ *
+ * Licensed under GPLv3
+ *
+ */
 package controller;
 
 import data_io.XmlChannelParser;
@@ -21,7 +35,7 @@ public class MainController {
     private ChannelModel currentChannel;
     private ProgramListModel programs;
     private FileMenuListener fileMenuListener;
-    public TimedProgramUpdater updater;
+    public TimedProgramUpdater timedUpdater;
     private Gui gui;
 
     public MainController(Gui gui, ChannelListModel channels, ProgramListModel programs){
@@ -36,7 +50,7 @@ public class MainController {
 
         // initially set current channel
         this.currentChannel = channels.get(0);
-        fileMenuListener = new FileMenuListener(this.currentChannel, this);
+        fileMenuListener = new FileMenuListener(this);
 
 
         // (re)load Programs List
@@ -54,7 +68,7 @@ public class MainController {
         // add listeners in Channel menu
         for (int channel_no = 0; channel_no < channels.size(); channel_no++){
             ChannelMenuListener tempListener;
-            tempListener = new ChannelMenuListener(channels.get(channel_no), this);
+            tempListener = new ChannelMenuListener(this);
             gui.menuBar.channelMenu.menuItems.get(channel_no).addActionListener(tempListener);
         }
 
@@ -65,8 +79,8 @@ public class MainController {
 
         gui.show();
 
-        updater = new TimedProgramUpdater(currentChannel, this.programs, gui.tablePanel, this);
-        updater.execute();
+        timedUpdater = new TimedProgramUpdater(this);
+        timedUpdater.execute();
 
     }
 

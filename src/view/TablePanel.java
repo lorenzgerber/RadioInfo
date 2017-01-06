@@ -1,17 +1,27 @@
+/*
+ * TablePanel
+ *
+ * RadioInfo Project,
+ * Coursework 5DV135 Application Development in Java
+ * at Umea University, December, January 2016/2017
+ *
+ * Lorenz Gerber
+ *
+ * Version 0.1
+ *
+ * Licensed under GPLv3
+ *
+ */
 package view;
 
-import controller.MainController;
 import controller.ProgramSelectionListener;
 import model.ProgramListModel;
 import model.ProgramTableModel;
 
 import javax.swing.*;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListSelectionListener;
 import javax.swing.table.DefaultTableCellRenderer;
 import java.awt.*;
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 
 import static java.time.format.DateTimeFormatter.*;
 

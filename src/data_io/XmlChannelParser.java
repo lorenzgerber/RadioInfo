@@ -1,3 +1,17 @@
+/*
+ * XmlChannelParser
+ *
+ * RadioInfo Project,
+ * Coursework 5DV135 Application Development in Java
+ * at Umea University, December, January 2016/2017
+ *
+ * Lorenz Gerber
+ *
+ * Version 0.1
+ *
+ * Licensed under GPLv3
+ *
+ */
 package data_io;
 
 import model.ChannelListModel;
