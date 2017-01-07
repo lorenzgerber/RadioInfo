@@ -19,13 +19,21 @@ import model.ChannelListModel;
 import javax.swing.JMenuBar;
 
 /**
- * Created by loge on 2016-12-21.
+ * ManuBar Class
+ * This class extends JMenuBar and
+ * contains currently two Menus, the File
+ * and the Channel menu.
  */
 public class MenuBar extends JMenuBar{
 
     public FileMenu fileMenu;
     public ChannelMenu channelMenu;
 
+    /**
+     * MenuBar
+     * Constructor
+     * @param channels ChannelListModel
+     */
     public MenuBar(ChannelListModel channels){
 
         this.fileMenu = new FileMenu();

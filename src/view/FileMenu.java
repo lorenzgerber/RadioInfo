@@ -27,7 +27,10 @@ public class FileMenu extends JMenu {
 
     public ArrayList<JMenuItem> menuItems = new ArrayList<JMenuItem>();
 
-
+    /**
+     * FileMenu
+     * Constructor method
+     */
     public FileMenu(){
         super("File");
         menuItems.add(new JMenuItem("Reload"));

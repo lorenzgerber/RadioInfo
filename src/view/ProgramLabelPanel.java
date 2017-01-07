@@ -23,22 +23,33 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
- * Created by loge on 2017-01-06.
+ * ProgramLablePanel Class
+ * This UI class extends JPanel and constructs
+ * a panel to visualize an image from the
+ * radio program. The image is loaded dynamically
+ * from the web.
  */
 public class ProgramLabelPanel extends JPanel {
 
-    JTextArea textArea;
     JLabel programLabel;
-    String infoText;
     String programLabelUrl;
 
+    /**
+     * ProgramLabelPanel
+     * Constructor
+     */
     public ProgramLabelPanel() {
-
         programLabel = new JLabel();
         add(programLabel);
     }
 
-
+    /**
+     * setProgramLabel
+     * Method to set the image. The image
+     * is provided through a string that
+     * contains the url to the image.
+     * @param stringUrl String
+     */
     public void setProgramLabel(String stringUrl){
         this.programLabelUrl = stringUrl;
         BufferedImage image = null;
@@ -51,22 +62,15 @@ public class ProgramLabelPanel extends JPanel {
                 URL url = new URL(programLabelUrl);
                 image = ImageIO.read(url);
             } catch (MalformedURLException e) {
-                e.printStackTrace();
+                System.out.println("Image could not be loaded: Malformed URL");
             } catch (IOException e) {
-                e.printStackTrace();
+                System.out.println("Image could not be loaded: IOException");
             }
 
             Image scaledImage = image.getScaledInstance(360, 360, java.awt.Image.SCALE_SMOOTH);
             programLabel = new ImageIcon(scaledImage);
-
         }
 
-
         this.programLabel.setIcon(programLabel);
-
-
-
     }
-
-
 }

@@ -1,22 +1,41 @@
+/*
+ * RadioInfoMain
+ *
+ * RadioInfo Project,
+ * Coursework 5DV135 Application Development in Java
+ * at Umea University, December, January 2016/2017
+ *
+ * Lorenz Gerber
+ *
+ * Version 0.1
+ *
+ * Licensed under GPLv3
+ *
+ */
 import controller.MainController;
-import data_io.XmlChannelParser;
-import data_io.XmlReader;
 import model.ChannelListModel;
-import model.ChannelModel;
 import model.ProgramListModel;
-import model.ProgramModel;
 import view.Gui;
 
 import javax.swing.*;
 
 /**
- * Created by loge on 2016-12-21.
+ * RadioInfoMain Class
+ * This class contains the main class to
+ * be run. It starts a new thread with the
+ * gui and the MainController instance. The
+ * main data containers channels and programs
+ * are declerad and assigned.
+ *
  */
 public class RadioInfoMain {
 
-
-
-
+    /**
+     * main
+     * method to be invoked for starting
+     * the application.
+     * @param args
+     */
     public static void main(String[] args){
 
         SwingUtilities.invokeLater(new Runnable() {
@@ -31,7 +50,5 @@ public class RadioInfoMain {
                 MainController main = new MainController(gui, channels, programs);
             }
         });
-
     }
-
 }

@@ -18,13 +18,20 @@ package view;
 import javax.swing.*;
 
 /**
- * Created by loge on 2017-01-06.
+ * ProgramDescriptionPanel Class
+ * This class extends JPanel and constructs
+ * the UI panel which contains the program
+ * description text in a JTextArea
  */
 public class ProgramDescriptionPanel extends JPanel {
 
     JTextArea textArea;
     String infoText;
 
+    /**
+     * ProgramDescriptionPanel
+     * Constructor method
+     */
     public ProgramDescriptionPanel() {
 
         textArea = new JTextArea(10,30);
@@ -34,7 +41,13 @@ public class ProgramDescriptionPanel extends JPanel {
         add(textArea);
     }
 
-
+    /**
+     * setDescription
+     * method to set the program description.
+     * The text area is emptied before a new
+     * text is set.
+     * @param infoText
+     */
     public void setDescription(String infoText){
         this.infoText = infoText;
         this.textArea.setText(null);
@@ -43,6 +56,5 @@ public class ProgramDescriptionPanel extends JPanel {
         }
         this.textArea.append(this.infoText);
     }
-
 
 }

@@ -27,7 +27,10 @@ import static java.time.format.DateTimeFormatter.*;
 
 
 /**
- * Created by lgerber on 2017-01-01.
+ * TablePanel Class
+ * This UI class extends JPanel and constructs
+ * the panel with a JTable to visualize the radio
+ * programs.
  */
 public class TablePanel extends JPanel {
 
@@ -36,6 +39,11 @@ public class TablePanel extends JPanel {
     ListSelectionModel model;
     public ProgramTableModel tableModel;
 
+    /**
+     * TablePanel
+     * Constructor method
+     * @param programList ProgramListModel
+     */
     public TablePanel(ProgramListModel programList){
 
         String[] columnNames = {"Program", "Start", "End"};
@@ -85,14 +93,22 @@ public class TablePanel extends JPanel {
 
     }
 
+    /**
+     * addSelectionListener
+     * This  method is used to trigger ActionEvents
+     * for clicking into the table.
+     * @param listener
+     */
     public void addSelectionListener(ProgramSelectionListener listener){
         model.addListSelectionListener(listener);
     }
 
+    /**
+     * getTable
+     * getter method for the table object
+     * @return
+     */
     public JTable getTable(){
         return table;
     }
-
-
-
 }
