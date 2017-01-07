@@ -27,8 +27,9 @@ public class ProgramTableModel extends AbstractTableModel {
         this.programList = programList;
     }
 
-    public void setDataVector(Object[][] dataVector){
-
+    public void setDataVector(ProgramListModel programList){
+        this.programList = programList;
+        this.fireTableDataChanged();
     };
 
     @Override

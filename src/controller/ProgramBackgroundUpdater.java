@@ -79,7 +79,8 @@ public class ProgramBackgroundUpdater extends SwingWorker<ProgramListModel, Obje
     @Override
     protected void done() {
         try {
-            main.getGui().tablePanel.tableModel.fireTableDataChanged();
+            main.getGui().tablePanel.getTable().updateUI();
+            main.getGui().tablePanel.tableModel.setDataVector(programs);
         } catch (Exception ignore) {
         }
 
