@@ -43,8 +43,8 @@ public class MainController {
     private ChannelModel currentChannel;
     private ProgramListModel programs;
     private FileMenuListener fileMenuListener;
-    public TimedProgramUpdater timedUpdater;
-    public ProgramBackgroundUpdater programBackgroundUpdater;
+    private TimedProgramUpdater timedUpdater;
+    private volatile ProgramBackgroundUpdater programBackgroundUpdater;
     private Gui gui;
 
 
@@ -90,9 +90,11 @@ public class MainController {
         }
 
         /* add click listener in Table */
+
         ProgramSelectionListener programListener;
         programListener = new ProgramSelectionListener(gui.tablePanel.getTable(), this);
         gui.tablePanel.addSelectionListener(programListener);
+
 
         gui.show();
 
@@ -144,6 +146,36 @@ public class MainController {
      */
     public Gui getGui(){
         return gui;
+    }
+
+    /**
+     * getProgramBackgroundUpdater
+     *
+     */
+    public synchronized ProgramBackgroundUpdater getProgramBackgroundUpdater(){
+        return this.programBackgroundUpdater;
+    }
+
+    /**
+     * setProgramBackgroundUpdater
+     *
+     */
+    public synchronized void setProgramBackgroundUpdater(ProgramBackgroundUpdater updater){
+        this.programBackgroundUpdater = updater;
+    }
+
+    /**
+     * get
+     */
+    public synchronized TimedProgramUpdater getTimedUpdater(){
+        return this.timedUpdater;
+    }
+
+    /**
+     * set TimedProgramUpdater
+     */
+    public synchronized void setTimedUpdater(TimedProgramUpdater updater){
+        this.timedUpdater = updater;
     }
 
 }

@@ -48,21 +48,16 @@ public class FileMenuListener implements ActionListener {
         if(e.getActionCommand().equals("Quit")) {
 
             /* graceful exit of the background swing worker thread for updates */
-            main.timedUpdater.cancel(true);
+            main.getTimedUpdater().cancel(true);
             System.exit(0);
         }
 
         if(e.getActionCommand().equals("Reload")){
-
-            synchronized (this){
-                main.programBackgroundUpdater = new ProgramBackgroundUpdater(main.getCurrentChannel(),
-                        main.getPrograms(),
-                        main.getGui().tablePanel,
-                        main);
-                main.programBackgroundUpdater.execute();
-            }
-
-
+            main.setProgramBackgroundUpdater(new ProgramBackgroundUpdater(main.getCurrentChannel(),
+                    main.getPrograms(),
+                    main.getGui().tablePanel,
+                    main));
+            main.getProgramBackgroundUpdater().execute();
         }
 
     }

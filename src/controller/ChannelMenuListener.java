@@ -23,7 +23,7 @@ import java.awt.event.ActionListener;
  * This class implements the ActionListener Class and is
  * catching events from the channel Menu. On selection of
  * a channel menu entry, it will initiate the update of
- * the ProgramList instance.
+ * the ProgramList instance. The Update is synchronized.
  *
  */
 public class ChannelMenuListener implements ActionListener {
@@ -54,13 +54,11 @@ public class ChannelMenuListener implements ActionListener {
         }
 
         if(e.getActionCommand().equals(main.getCurrentChannel().getName())) {
-            synchronized(this){
-                main.programBackgroundUpdater = new ProgramBackgroundUpdater(main.getCurrentChannel(),
-                        main.getPrograms(),
-                        main.getGui().tablePanel,
-                        main);
-                main.programBackgroundUpdater.execute();
-            }
+            main.setProgramBackgroundUpdater(new ProgramBackgroundUpdater(main.getCurrentChannel(),
+                    main.getPrograms(),
+                    main.getGui().tablePanel,
+                    main));
+            main.getProgramBackgroundUpdater().execute();
         }
     }
 
