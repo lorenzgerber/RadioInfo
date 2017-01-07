@@ -44,6 +44,7 @@ public class MainController {
     private ProgramListModel programs;
     private FileMenuListener fileMenuListener;
     public TimedProgramUpdater timedUpdater;
+    public ProgramBackgroundUpdater programBackgroundUpdater;
     private Gui gui;
 
 

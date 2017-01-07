@@ -54,11 +54,13 @@ public class ChannelMenuListener implements ActionListener {
         }
 
         if(e.getActionCommand().equals(main.getCurrentChannel().getName())) {
-            (new ProgramBackgroundUpdater(main.getCurrentChannel(),
-                    main.getPrograms(),
-                    main.getGui().tablePanel,
-                    main)).execute();
-
+            synchronized(this){
+                main.programBackgroundUpdater = new ProgramBackgroundUpdater(main.getCurrentChannel(),
+                        main.getPrograms(),
+                        main.getGui().tablePanel,
+                        main);
+                main.programBackgroundUpdater.execute();
+            }
         }
     }
 

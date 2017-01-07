@@ -39,7 +39,8 @@ public class FileMenuListener implements ActionListener {
 
     /**
      * {@inheritDoc}
-     * This method will start a ProgramBackgroundUpdater
+     * This method will start a ProgramBackgroundUpdater. It uses
+     * for this a synchronized statement.
      * @param e
      */
     @Override
@@ -53,10 +54,15 @@ public class FileMenuListener implements ActionListener {
 
         if(e.getActionCommand().equals("Reload")){
 
-            (new ProgramBackgroundUpdater(main.getCurrentChannel(),
-                    main.getPrograms(),
-                    main.getGui().tablePanel,
-                    main)).execute();
+            synchronized (this){
+                main.programBackgroundUpdater = new ProgramBackgroundUpdater(main.getCurrentChannel(),
+                        main.getPrograms(),
+                        main.getGui().tablePanel,
+                        main);
+                main.programBackgroundUpdater.execute();
+            }
+
+
         }
 
     }
