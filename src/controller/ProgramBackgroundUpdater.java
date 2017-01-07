@@ -65,9 +65,9 @@ public class ProgramBackgroundUpdater extends SwingWorker<ProgramListModel, Obje
     public ProgramListModel doInBackground() {
 
         XmlScheduleParser parser = new XmlScheduleParser(channel.getId(), LocalDate.now());
-        programs.load(parser.iterator());
-        programs.prune12Hours();
-        programs.sortTime();
+        main.getPrograms().load(parser.iterator());
+        main.getPrograms().prune12Hours();
+        main.getPrograms().sortTime();
         return programs;
     }
 

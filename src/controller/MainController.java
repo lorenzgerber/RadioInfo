@@ -108,7 +108,7 @@ public class MainController {
      * property accessor
      * @return ChanneModel a reference to the currently selected channel
      */
-    public ChannelModel getCurrentChannel(){
+    public synchronized ChannelModel getCurrentChannel(){
         return currentChannel;
     }
 
@@ -117,7 +117,7 @@ public class MainController {
      * property setter
      * @param currentChannel ChannelModel sets the currently selected channel
      */
-    public void setCurrentChannel(ChannelModel currentChannel){
+    public synchronized void setCurrentChannel(ChannelModel currentChannel){
         this.currentChannel = currentChannel;
     }
 
@@ -126,7 +126,7 @@ public class MainController {
      * property accessor
      * @return ChannelListModel reference to the channel list
      */
-    public ChannelListModel getChannels(){
+    public synchronized ChannelListModel getChannels(){
         return channels;
     }
 
@@ -135,7 +135,7 @@ public class MainController {
      * property accessor
      * @return ProgramListModel reference to the program list
      */
-    public ProgramListModel getPrograms(){
+    public synchronized ProgramListModel getPrograms(){
         return programs;
     }
 
