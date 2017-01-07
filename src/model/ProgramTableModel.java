@@ -17,17 +17,36 @@ package model;
 import javax.swing.table.AbstractTableModel;
 
 /**
- * Created by loge on 2017-01-02.
+ * ProgramTableModel Class
+ *
+ * This is a model for the JTable that extends
+ * the AbstractTableModel. It takes a ProgramListModel
+ * as data container. The model it's limitation for the
+ * specific use-case: it is not intended to update data
+ * in place, rather the whole ProgramListModel is renewed.
+ * The UI update events had to be adapted accordingly and
+ * don't follow the common TableModel principle fully.
  */
 public class ProgramTableModel extends AbstractTableModel {
 
     private ProgramListModel programList;
 
+    /**
+     * ProgramTableModel
+     * Constructor that takes the data container
+     * ProgramTableModel as argument.
+     * @param programList ProgramListModel data container
+     */
     public ProgramTableModel(ProgramListModel programList){
         this.programList = programList;
     }
 
-    public void setDataVector(ProgramListModel programList){
+    /**
+     * renewData
+     * method used to renew the complete data container
+     * @param programList ProgramListModel data container
+     */
+    public void renewData(ProgramListModel programList){
         this.programList = programList;
         this.fireTableDataChanged();
     };

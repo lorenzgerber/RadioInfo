@@ -22,13 +22,23 @@ import javax.swing.*;
 import java.util.ArrayList;
 
 /**
- * Created by loge on 2016-12-21.
+ * ChannelMenu Class
+ * This UI class extends JMenu and implements the
+ * IObserver interface. It is dynamically filled
+ * with channels from a ChannelListModel object.
+ * It can be updated automatically by registering
+ * the instance to a ISubject implementing instance.
  */
 public class ChannelMenu extends JMenu implements IObserver {
 
     public ArrayList<JMenuItem> menuItems = new ArrayList<JMenuItem>();
     public ChannelListModel channels;
 
+    /**
+     * ChannelMenu
+     * Constructor method
+     * @param channels ChannelListModel
+     */
     public ChannelMenu(ChannelListModel channels){
 
         super("Channels");
@@ -47,6 +57,11 @@ public class ChannelMenu extends JMenu implements IObserver {
 
     }
 
+    /**
+     * updateChannels
+     * This method re-reads the ChannelListModel
+     * object and updates as such it's menu items.
+     */
     public void updateChannels(){
         for(ChannelModel channel : channels){
             menuItems.add(new JMenuItem(channel.getName()));
@@ -55,14 +70,18 @@ public class ChannelMenu extends JMenu implements IObserver {
         for (JMenuItem item : menuItems){
             this.add(item);
         }
-
     }
 
+    /**
+     * {@inheritDoc}
+     * This method is called from the ISubject
+     * implementing instance to provoke the
+     * update of the channels.
+     */
     @Override
     public void update() {
         updateChannels();
         this.repaint();
-
     }
 
 }

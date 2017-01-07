@@ -80,7 +80,7 @@ public class ProgramBackgroundUpdater extends SwingWorker<ProgramListModel, Obje
     protected void done() {
         try {
             main.getGui().tablePanel.getTable().updateUI();
-            main.getGui().tablePanel.tableModel.setDataVector(programs);
+            main.getGui().tablePanel.tableModel.renewData(programs);
         } catch (Exception ignore) {
         }
 
